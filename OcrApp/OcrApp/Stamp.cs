@@ -5,19 +5,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ocr
+namespace OcrApp
 {
     [JsonObject(MemberSerialization.Fields)]
     class Stamp
     {
-        private List<Detection> detections;
-        private DateTime endTimestamp, startTimestamp;
-        private string foundStamp;
-        private string path;
+        private readonly List<Detection> detections;
+        private readonly DateTime endTimestamp, startTimestamp;
+        private readonly string foundStamp, path;
 
         public Stamp(List<Detection> detections, DateTime endTimestamp, DateTime startTimestamp, string foundStamp, string path)
         {
-            this.detections = detections;
+            this.detections = new List<Detection>(detections);
             this.endTimestamp = endTimestamp;
             this.startTimestamp = startTimestamp;
             this.foundStamp = foundStamp;
