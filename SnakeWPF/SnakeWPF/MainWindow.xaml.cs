@@ -34,7 +34,7 @@ namespace SnakeWPF
 
             GenerateFood();
 
-            Timer.Interval = TimeSpan.FromMilliseconds(Settings.Speed);
+            Timer.Interval = TimeSpan.FromMilliseconds(Snake.SnakeSpeed);
             Timer.IsEnabled = true;
         }
 
@@ -43,7 +43,10 @@ namespace SnakeWPF
             Random Random = new Random();
             this.Food = new GameItem(new Point(Random.Next(0, ((int)GameArea.Width/ Settings.SnakeSegmentSize)) * Settings.SnakeSegmentSize,
                 Random.Next(0, ((int)GameArea.Height / Settings.SnakeSegmentSize)) * Settings.SnakeSegmentSize));
-           // this.Food = new GameItem(new Point(200, 400));
+            if (Collider.CollisionTest(Food, Snake))
+            {
+                GenerateFood(); 
+            }
         }
 
         private void Draw()
@@ -56,7 +59,7 @@ namespace SnakeWPF
                 {
                     Height = Settings.SnakeSegmentSize,
                     Width = Settings.SnakeSegmentSize,
-                    Fill = SnakeSegment.IsHead ? Brushes.Aqua : Brushes.Green
+                    Fill = SnakeSegment.IsHead ? Settings.SnakeHeadBrush : Settings.SnakeSegmentBrush
                 };
 
                 GameArea.Children.Add(Rect);
@@ -92,31 +95,37 @@ namespace SnakeWPF
 
         private void CheckCollisions()
         {
+
+            if (Collider.CollisionTest(Snake))
+            {
+                GameOver();
+            }
+
             if (Collider.CollisionTest(Food, Snake))
             {
                 GenerateFood();
                 Settings.Score++;
                 Snake.AddNewSegment(Snake.SnakeSegments.Last().Position);
+                Timer.Interval = TimeSpan.FromMilliseconds(Snake.SnakeSpeed);
             }
+        }
+
+        private void GameOver()
+        {
+            Close();
+            MessageBox.Show("Your score: " + Settings.Score, "GAME OVER");
         }
 
         protected virtual void OnKeyUp(object sender, KeyEventArgs e)
         {
-            switch (e.Key)
-            {
-                case Key.Up:
-                    Snake.SnakeDirection = Direction.Up;
-                    break;
-                case Key.Left:
-                    Snake.SnakeDirection = Direction.Left;
-                    break;
-                case Key.Down:
-                    Snake.SnakeDirection = Direction.Down;
-                    break;
-                case Key.Right:
-                    Snake.SnakeDirection = Direction.Right;
-                    break;
-            }
+            if (e.Key == Key.Up && Snake.SnakeDirection != Direction.Down)
+                Snake.SnakeDirection = Direction.Up;
+            else if (e.Key == Key.Left && Snake.SnakeDirection != Direction.Right)
+                Snake.SnakeDirection = Direction.Left;
+            else if (e.Key == Key.Down && Snake.SnakeDirection != Direction.Up)
+                Snake.SnakeDirection = Direction.Down;
+            else if (e.Key == Key.Right && Snake.SnakeDirection != Direction.Left)
+                Snake.SnakeDirection = Direction.Right;
         }
     }
 }

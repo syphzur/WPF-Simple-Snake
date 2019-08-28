@@ -17,24 +17,46 @@ namespace SnakeWPF
             this.WindowResY = WindowResY;
         }
 
-        public bool CollisionTest(GameItem Food, Snake Snake)
+        public bool CollisionTest(GameItem Food, SnakeSegment Segment)
         {
-            if (Food.Position.X == Snake.SnakeSegments.First().Position.X && Food.Position.Y == Snake.SnakeSegments.First().Position.Y)
+            if (Food.Position.X == Segment.Position.X && Food.Position.Y == Segment.Position.Y)
             {
                 return true;
             }
             return false;
         }
 
-        //todo
+        public bool CollisionTest(GameItem Food, Snake Snake)
+        {
+            foreach (var Segment in Snake.SnakeSegments)
+            {
+                if (CollisionTest(Food, Segment))
+                    return true;
+            }
+            return false;
+        }
 
-        //public bool CollisionTest(Snake Snake)
-        //{
-        //    for(int i = 1; i < Snake.SnakeSegments.Count; i++)
-        //    {
-        //       if (Snake.SnakeSegments[i].Position.X == Snake.SnakeSegments.First()&& )
-        //    }
-        //        return false;
-        //}
+
+        public bool CollisionTest(Snake Snake)
+        {
+            //head with body
+            for (int i = 1; i < Snake.SnakeSegments.Count; i++)
+            {
+                if (Snake.SnakeSegments[i].Position.X == Snake.SnakeSegments.First().Position.X && 
+                    Snake.SnakeSegments[i].Position.Y == Snake.SnakeSegments.First().Position.Y)
+                {
+                    return true;
+                }
+            }
+
+            //head with edges of the screen
+            if (Snake.SnakeSegments.First().Position.X < 0 || Snake.SnakeSegments.First().Position.Y < 0 ||
+                Snake.SnakeSegments.First().Position.X >= WindowResX || Snake.SnakeSegments.First().Position.Y >= WindowResY)
+            {
+                return true;
+            }
+
+                return false;
+        }
     }
 }

@@ -16,11 +16,14 @@ namespace SnakeWPF
     {
         public List<SnakeSegment> SnakeSegments { get; set; }
         public Direction SnakeDirection { get; set; }
+        public int SnakeSpeed { get; set; }
 
         public Snake()
         {
-            this.SnakeSegments = new List<SnakeSegment> { new SnakeSegment(new Point(Settings.StartingPositionX, Settings.StartingPositionY), true) };
-            this.SnakeDirection = Direction.Up;
+            this.SnakeSegments = new List<SnakeSegment>
+            { new SnakeSegment(new Point(Settings.StartingPositionX, Settings.StartingPositionY), true) }; // adding head
+            this.SnakeDirection = Direction.None;
+            this.SnakeSpeed = Settings.StartingSpeed;
         }
         public void Move()
         {
@@ -61,6 +64,12 @@ namespace SnakeWPF
         public void AddNewSegment(Point Position)
         {
             SnakeSegments.Add(new SnakeSegment(Position, false));
+            SpeedUp();
+        }
+
+        private void SpeedUp()
+        {
+            SnakeSpeed -= 5;
         }
     }
 }
