@@ -6,7 +6,6 @@ namespace OcrApp
     class ReceivedData
     {
         private List<Stamp> stamps = new List<Stamp>();
-
         public void Add(Stamp stamp)
         {
             this.stamps.Add(stamp);

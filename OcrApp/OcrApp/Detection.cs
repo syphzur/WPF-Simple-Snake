@@ -3,21 +3,20 @@ using System.Collections.Generic;
 
 namespace OcrApp
 {
-    [JsonObject(MemberSerialization.Fields)]
     class Detection
     {
-        private readonly string detectionFilename, detectionFilepath;
-        private readonly string image, imageFilename, imageFilepath;
-        private readonly List<DetectionStruct> detectionData;
+        public string detectionFilename { get; set; }
+        public string detectionFilepath { get; set; }
+        public string image { get; set; }
+        public string imageFilename { get; set; }
+        public string imageFilepath { get; set; }
+        [JsonProperty(PropertyName = "detections")]
+        public List<DetectionStruct> detectionData { get; set; }
 
-        public Detection(string detectionFilename, string detectionFilepath, string image, string imageFilename, string imageFilepath, List<DetectionStruct> detectionData)
+        public Detection()
         {
-            this.detectionFilename = detectionFilename;
-            this.detectionFilepath = detectionFilepath;
-            this.image = image;
-            this.imageFilename = imageFilename;
-            this.imageFilepath = imageFilepath;
-            this.detectionData = new List<DetectionStruct>(detectionData);
+            this.detectionData = new List<DetectionStruct>();
         }
+
     }
 }
