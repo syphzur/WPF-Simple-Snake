@@ -5,7 +5,16 @@ namespace OcrApp
 {
     class ReceivedData
     {
-        private List<Stamp> stamps = new List<Stamp>();
+        public List<Stamp> stamps { get; set; }
+
+        public ReceivedData()
+        {
+            stamps = new List<Stamp>();
+        }
+        public ReceivedData(List<Stamp> stamps)
+        {
+            this.stamps = new List<Stamp>(stamps);
+        }
         public void Add(Stamp stamp)
         {
             this.stamps.Add(stamp);
@@ -15,7 +24,7 @@ namespace OcrApp
         {
             foreach (var stamp in stamps)
             {
-                Console.WriteLine(stamp.data.foundStamp);
+                Console.WriteLine(stamp.data.FoundStamp);
             }
         }
     }

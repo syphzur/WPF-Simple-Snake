@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace OcrApp
 {
-    class Stamp
+    public class Stamp
     {
         public string type { get; set; }
         public Data data { get; set; }
