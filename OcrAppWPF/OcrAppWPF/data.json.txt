@@ -1,0 +1,2630 @@
+{
+    "data": {
+        "detections": [
+            {
+                "detectionFilename": "reasy_log_20194628_144645_274_1.json",
+                "detectionFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_1.json",
+                "detections": [
+                    {
+                        "class": 6,
+                        "className": "6",
+                        "maxX": 392,
+                        "maxY": 143,
+                        "minX": 358,
+                        "minY": 94,
+                        "percentage": 0.9865614771842957
+                    },
+                    {
+                        "class": 10,
+                        "className": "A",
+                        "maxX": 511,
+                        "maxY": 141,
+                        "minX": 470,
+                        "minY": 90,
+                        "percentage": 0.8744655251502991
+                    },
+                    {
+                        "class": 4,
+                        "className": "4",
+                        "maxX": 624,
+                        "maxY": 139,
+                        "minX": 591,
+                        "minY": 85,
+                        "percentage": 0.9123766422271729
+                    },
+                    {
+                        "class": 0,
+                        "className": "0",
+                        "maxX": 719,
+                        "maxY": 136,
+                        "minX": 685,
+                        "minY": 87,
+                        "percentage": 0.8419937491416931
+                    }
+                ],
+                "image": "reasy_log_20194628_144645_274_1.jpg",
+                "imageFilename": "reasy_log_20194628_144645_274_1.jpg",
+                "imageFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_1.jpg"
+            },
+            {
+                "detectionFilename": "reasy_log_20194628_144645_274_2.json",
+                "detectionFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_2.json",
+                "detections": [
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 355,
+                        "maxY": 144,
+                        "minX": 319,
+                        "minY": 93,
+                        "percentage": 0.701693594455719
+                    },
+                    {
+                        "class": 6,
+                        "className": "6",
+                        "maxX": 445,
+                        "maxY": 139,
+                        "minX": 411,
+                        "minY": 92,
+                        "percentage": 0.9347867965698242
+                    },
+                    {
+                        "class": 10,
+                        "className": "A",
+                        "maxX": 564,
+                        "maxY": 141,
+                        "minX": 531,
+                        "minY": 88,
+                        "percentage": 0.7357887029647827
+                    },
+                    {
+                        "class": 4,
+                        "className": "4",
+                        "maxX": 680,
+                        "maxY": 137,
+                        "minX": 647,
+                        "minY": 85,
+                        "percentage": 0.8850266337394714
+                    },
+                    {
+                        "class": 0,
+                        "className": "0",
+                        "maxX": 774,
+                        "maxY": 137,
+                        "minX": 741,
+                        "minY": 87,
+                        "percentage": 0.939768373966217
+                    }
+                ],
+                "image": "reasy_log_20194628_144645_274_2.jpg",
+                "imageFilename": "reasy_log_20194628_144645_274_2.jpg",
+                "imageFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_2.jpg"
+            },
+            {
+                "detectionFilename": "reasy_log_20194628_144645_274_3.json",
+                "detectionFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_3.json",
+                "detections": [
+                    {
+                        "class": 8,
+                        "className": "8",
+                        "maxX": 307,
+                        "maxY": 146,
+                        "minX": 274,
+                        "minY": 94,
+                        "percentage": 0.8925005197525024
+                    },
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 401,
+                        "maxY": 141,
+                        "minX": 365,
+                        "minY": 95,
+                        "percentage": 0.9140680432319641
+                    },
+                    {
+                        "class": 6,
+                        "className": "6",
+                        "maxX": 491,
+                        "maxY": 139,
+                        "minX": 458,
+                        "minY": 92,
+                        "percentage": 0.9883246421813965
+                    },
+                    {
+                        "class": 10,
+                        "className": "A",
+                        "maxX": 608,
+                        "maxY": 141,
+                        "minX": 574,
+                        "minY": 89,
+                        "percentage": 0.9287890195846558
+                    },
+                    {
+                        "class": 4,
+                        "className": "4",
+                        "maxX": 726,
+                        "maxY": 141,
+                        "minX": 701,
+                        "minY": 83,
+                        "percentage": 0.8822622299194336
+                    },
+                    {
+                        "class": 0,
+                        "className": "0",
+                        "maxX": 822,
+                        "maxY": 135,
+                        "minX": 789,
+                        "minY": 88,
+                        "percentage": 0.8719545006752014
+                    }
+                ],
+                "image": "reasy_log_20194628_144645_274_3.jpg",
+                "imageFilename": "reasy_log_20194628_144645_274_3.jpg",
+                "imageFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_3.jpg"
+            },
+            {
+                "detectionFilename": "reasy_log_20194628_144645_274_4.json",
+                "detectionFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_4.json",
+                "detections": [
+                    {
+                        "class": 8,
+                        "className": "8",
+                        "maxX": 328,
+                        "maxY": 145,
+                        "minX": 295,
+                        "minY": 95,
+                        "percentage": 0.9831508994102478
+                    },
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 421,
+                        "maxY": 143,
+                        "minX": 383,
+                        "minY": 93,
+                        "percentage": 0.9673333764076233
+                    },
+                    {
+                        "class": 6,
+                        "className": "6",
+                        "maxX": 513,
+                        "maxY": 139,
+                        "minX": 479,
+                        "minY": 92,
+                        "percentage": 0.9853036999702454
+                    },
+                    {
+                        "class": 10,
+                        "className": "A",
+                        "maxX": 629,
+                        "maxY": 140,
+                        "minX": 595,
+                        "minY": 88,
+                        "percentage": 0.9274740219116211
+                    },
+                    {
+                        "class": 4,
+                        "className": "4",
+                        "maxX": 747,
+                        "maxY": 138,
+                        "minX": 714,
+                        "minY": 84,
+                        "percentage": 0.8840799927711487
+                    },
+                    {
+                        "class": 0,
+                        "className": "0",
+                        "maxX": 843,
+                        "maxY": 135,
+                        "minX": 810,
+                        "minY": 87,
+                        "percentage": 0.8256806135177612
+                    }
+                ],
+                "image": "reasy_log_20194628_144645_274_4.jpg",
+                "imageFilename": "reasy_log_20194628_144645_274_4.jpg",
+                "imageFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_4.jpg"
+            },
+            {
+                "detectionFilename": "reasy_log_20194628_144645_274_5.json",
+                "detectionFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_5.json",
+                "detections": [
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 70,
+                        "maxY": 148,
+                        "minX": 36,
+                        "minY": 94,
+                        "percentage": 0.7499018311500549
+                    },
+                    {
+                        "class": 8,
+                        "className": "8",
+                        "maxX": 347,
+                        "maxY": 145,
+                        "minX": 314,
+                        "minY": 95,
+                        "percentage": 0.9748629927635193
+                    },
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 443,
+                        "maxY": 141,
+                        "minX": 403,
+                        "minY": 91,
+                        "percentage": 0.9839363694190979
+                    },
+                    {
+                        "class": 6,
+                        "className": "6",
+                        "maxX": 533,
+                        "maxY": 138,
+                        "minX": 499,
+                        "minY": 92,
+                        "percentage": 0.9667854309082031
+                    },
+                    {
+                        "class": 10,
+                        "className": "A",
+                        "maxX": 649,
+                        "maxY": 141,
+                        "minX": 615,
+                        "minY": 88,
+                        "percentage": 0.8952814936637878
+                    },
+                    {
+                        "class": 4,
+                        "className": "4",
+                        "maxX": 766,
+                        "maxY": 138,
+                        "minX": 733,
+                        "minY": 83,
+                        "percentage": 0.8361234664916992
+                    },
+                    {
+                        "class": 0,
+                        "className": "0",
+                        "maxX": 861,
+                        "maxY": 135,
+                        "minX": 827,
+                        "minY": 88,
+                        "percentage": 0.9422887563705444
+                    }
+                ],
+                "image": "reasy_log_20194628_144645_274_5.jpg",
+                "imageFilename": "reasy_log_20194628_144645_274_5.jpg",
+                "imageFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_5.jpg"
+            },
+            {
+                "detectionFilename": "reasy_log_20194628_144645_274_6.json",
+                "detectionFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_6.json",
+                "detections": [
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 87,
+                        "maxY": 146,
+                        "minX": 53,
+                        "minY": 96,
+                        "percentage": 0.8488524556159973
+                    },
+                    {
+                        "class": 8,
+                        "className": "8",
+                        "maxX": 363,
+                        "maxY": 145,
+                        "minX": 329,
+                        "minY": 93,
+                        "percentage": 0.9483062028884888
+                    },
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 460,
+                        "maxY": 141,
+                        "minX": 419,
+                        "minY": 90,
+                        "percentage": 0.9757391810417175
+                    },
+                    {
+                        "class": 6,
+                        "className": "6",
+                        "maxX": 550,
+                        "maxY": 138,
+                        "minX": 516,
+                        "minY": 92,
+                        "percentage": 0.9877284169197083
+                    },
+                    {
+                        "class": 10,
+                        "className": "A",
+                        "maxX": 669,
+                        "maxY": 140,
+                        "minX": 628,
+                        "minY": 89,
+                        "percentage": 0.9404794573783875
+                    },
+                    {
+                        "class": 4,
+                        "className": "4",
+                        "maxX": 783,
+                        "maxY": 138,
+                        "minX": 751,
+                        "minY": 85,
+                        "percentage": 0.8883957862854004
+                    },
+                    {
+                        "class": 0,
+                        "className": "0",
+                        "maxX": 878,
+                        "maxY": 135,
+                        "minX": 845,
+                        "minY": 88,
+                        "percentage": 0.9866185188293457
+                    },
+                    {
+                        "class": 8,
+                        "className": "8",
+                        "maxX": 970,
+                        "maxY": 132,
+                        "minX": 936,
+                        "minY": 85,
+                        "percentage": 0.726754903793335
+                    }
+                ],
+                "image": "reasy_log_20194628_144645_274_6.jpg",
+                "imageFilename": "reasy_log_20194628_144645_274_6.jpg",
+                "imageFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_6.jpg"
+            },
+            {
+                "detectionFilename": "reasy_log_20194628_144645_274_7.json",
+                "detectionFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_7.json",
+                "detections": [
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 103,
+                        "maxY": 145,
+                        "minX": 70,
+                        "minY": 96,
+                        "percentage": 0.7464328408241272
+                    },
+                    {
+                        "class": 8,
+                        "className": "8",
+                        "maxX": 383,
+                        "maxY": 143,
+                        "minX": 347,
+                        "minY": 94,
+                        "percentage": 0.9852829575538635
+                    },
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 477,
+                        "maxY": 140,
+                        "minX": 436,
+                        "minY": 91,
+                        "percentage": 0.9758738875389099
+                    },
+                    {
+                        "class": 6,
+                        "className": "6",
+                        "maxX": 566,
+                        "maxY": 138,
+                        "minX": 532,
+                        "minY": 92,
+                        "percentage": 0.9944482445716858
+                    },
+                    {
+                        "class": 10,
+                        "className": "A",
+                        "maxX": 682,
+                        "maxY": 139,
+                        "minX": 648,
+                        "minY": 88,
+                        "percentage": 0.9376204609870911
+                    },
+                    {
+                        "class": 4,
+                        "className": "4",
+                        "maxX": 798,
+                        "maxY": 135,
+                        "minX": 766,
+                        "minY": 80,
+                        "percentage": 0.9239786863327026
+                    },
+                    {
+                        "class": 0,
+                        "className": "0",
+                        "maxX": 894,
+                        "maxY": 134,
+                        "minX": 861,
+                        "minY": 87,
+                        "percentage": 0.9658727049827576
+                    },
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 986,
+                        "maxY": 130,
+                        "minX": 953,
+                        "minY": 86,
+                        "percentage": 0.9163507223129272
+                    }
+                ],
+                "image": "reasy_log_20194628_144645_274_7.jpg",
+                "imageFilename": "reasy_log_20194628_144645_274_7.jpg",
+                "imageFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_7.jpg"
+            },
+            {
+                "detectionFilename": "reasy_log_20194628_144645_274_8.json",
+                "detectionFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_8.json",
+                "detections": [
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 119,
+                        "maxY": 145,
+                        "minX": 83,
+                        "minY": 95,
+                        "percentage": 0.8925836682319641
+                    },
+                    {
+                        "class": 8,
+                        "className": "8",
+                        "maxX": 395,
+                        "maxY": 145,
+                        "minX": 361,
+                        "minY": 93,
+                        "percentage": 0.9838907122612
+                    },
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 489,
+                        "maxY": 141,
+                        "minX": 453,
+                        "minY": 90,
+                        "percentage": 0.9755846858024597
+                    },
+                    {
+                        "class": 6,
+                        "className": "6",
+                        "maxX": 581,
+                        "maxY": 138,
+                        "minX": 547,
+                        "minY": 92,
+                        "percentage": 0.9877488613128662
+                    },
+                    {
+                        "class": 10,
+                        "className": "A",
+                        "maxX": 699,
+                        "maxY": 138,
+                        "minX": 658,
+                        "minY": 88,
+                        "percentage": 0.9576176404953003
+                    },
+                    {
+                        "class": 4,
+                        "className": "4",
+                        "maxX": 795,
+                        "maxY": 140,
+                        "minX": 782,
+                        "minY": 75,
+                        "percentage": 0.6544837951660156
+                    },
+                    {
+                        "class": 0,
+                        "className": "0",
+                        "maxX": 909,
+                        "maxY": 134,
+                        "minX": 876,
+                        "minY": 87,
+                        "percentage": 0.9954284429550171
+                    },
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 1002,
+                        "maxY": 132,
+                        "minX": 968,
+                        "minY": 85,
+                        "percentage": 0.9881472587585449
+                    }
+                ],
+                "image": "reasy_log_20194628_144645_274_8.jpg",
+                "imageFilename": "reasy_log_20194628_144645_274_8.jpg",
+                "imageFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_8.jpg"
+            },
+            {
+                "detectionFilename": "reasy_log_20194628_144645_274_9.json",
+                "detectionFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_9.json",
+                "detections": [
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 133,
+                        "maxY": 143,
+                        "minX": 99,
+                        "minY": 95,
+                        "percentage": 0.8481495976448059
+                    },
+                    {
+                        "class": 3,
+                        "className": "3",
+                        "maxX": 227,
+                        "maxY": 142,
+                        "minX": 194,
+                        "minY": 97,
+                        "percentage": 0.7557166814804077
+                    },
+                    {
+                        "class": 8,
+                        "className": "8",
+                        "maxX": 409,
+                        "maxY": 146,
+                        "minX": 376,
+                        "minY": 93,
+                        "percentage": 0.9922949075698853
+                    },
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 504,
+                        "maxY": 140,
+                        "minX": 464,
+                        "minY": 90,
+                        "percentage": 0.9850008487701416
+                    },
+                    {
+                        "class": 6,
+                        "className": "6",
+                        "maxX": 595,
+                        "maxY": 138,
+                        "minX": 561,
+                        "minY": 93,
+                        "percentage": 0.9642502069473267
+                    },
+                    {
+                        "class": 10,
+                        "className": "A",
+                        "maxX": 711,
+                        "maxY": 140,
+                        "minX": 677,
+                        "minY": 88,
+                        "percentage": 0.8863473534584045
+                    },
+                    {
+                        "class": 4,
+                        "className": "4",
+                        "maxX": 827,
+                        "maxY": 138,
+                        "minX": 794,
+                        "minY": 82,
+                        "percentage": 0.9011023044586182
+                    },
+                    {
+                        "class": 0,
+                        "className": "0",
+                        "maxX": 923,
+                        "maxY": 133,
+                        "minX": 889,
+                        "minY": 87,
+                        "percentage": 0.9904098510742188
+                    },
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 1015,
+                        "maxY": 128,
+                        "minX": 981,
+                        "minY": 83,
+                        "percentage": 0.7608752846717834
+                    }
+                ],
+                "image": "reasy_log_20194628_144645_274_9.jpg",
+                "imageFilename": "reasy_log_20194628_144645_274_9.jpg",
+                "imageFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_9.jpg"
+            },
+            {
+                "detectionFilename": "reasy_log_20194628_144645_274_10.json",
+                "detectionFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_10.json",
+                "detections": [
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 156,
+                        "maxY": 142,
+                        "minX": 122,
+                        "minY": 95,
+                        "percentage": 0.9229303002357483
+                    },
+                    {
+                        "class": 3,
+                        "className": "3",
+                        "maxX": 249,
+                        "maxY": 142,
+                        "minX": 216,
+                        "minY": 97,
+                        "percentage": 0.9151036143302917
+                    },
+                    {
+                        "class": 8,
+                        "className": "8",
+                        "maxX": 432,
+                        "maxY": 144,
+                        "minX": 398,
+                        "minY": 93,
+                        "percentage": 0.9951498508453369
+                    },
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 525,
+                        "maxY": 139,
+                        "minX": 489,
+                        "minY": 90,
+                        "percentage": 0.990801990032196
+                    },
+                    {
+                        "class": 6,
+                        "className": "6",
+                        "maxX": 616,
+                        "maxY": 138,
+                        "minX": 583,
+                        "minY": 92,
+                        "percentage": 0.9883901476860046
+                    },
+                    {
+                        "class": 10,
+                        "className": "A",
+                        "maxX": 733,
+                        "maxY": 140,
+                        "minX": 699,
+                        "minY": 87,
+                        "percentage": 0.9728466272354126
+                    },
+                    {
+                        "class": 4,
+                        "className": "4",
+                        "maxX": 849,
+                        "maxY": 137,
+                        "minX": 816,
+                        "minY": 85,
+                        "percentage": 0.7102972269058228
+                    },
+                    {
+                        "class": 0,
+                        "className": "0",
+                        "maxX": 945,
+                        "maxY": 133,
+                        "minX": 911,
+                        "minY": 88,
+                        "percentage": 0.9929110407829285
+                    },
+                    {
+                        "class": 8,
+                        "className": "8",
+                        "maxX": 1038,
+                        "maxY": 128,
+                        "minX": 1004,
+                        "minY": 88,
+                        "percentage": 0.6488804817199707
+                    }
+                ],
+                "image": "reasy_log_20194628_144645_274_10.jpg",
+                "imageFilename": "reasy_log_20194628_144645_274_10.jpg",
+                "imageFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_10.jpg"
+            },
+            {
+                "detectionFilename": "reasy_log_20194628_144645_274_11.json",
+                "detectionFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_11.json",
+                "detections": [
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 171,
+                        "maxY": 141,
+                        "minX": 137,
+                        "minY": 95,
+                        "percentage": 0.8108218908309937
+                    },
+                    {
+                        "class": 3,
+                        "className": "3",
+                        "maxX": 265,
+                        "maxY": 142,
+                        "minX": 232,
+                        "minY": 96,
+                        "percentage": 0.907495379447937
+                    },
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 358,
+                        "maxY": 145,
+                        "minX": 322,
+                        "minY": 91,
+                        "percentage": 0.7023537158966064
+                    },
+                    {
+                        "class": 8,
+                        "className": "8",
+                        "maxX": 449,
+                        "maxY": 143,
+                        "minX": 415,
+                        "minY": 93,
+                        "percentage": 0.9865587949752808
+                    },
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 544,
+                        "maxY": 140,
+                        "minX": 508,
+                        "minY": 90,
+                        "percentage": 0.9849444627761841
+                    },
+                    {
+                        "class": 6,
+                        "className": "6",
+                        "maxX": 635,
+                        "maxY": 138,
+                        "minX": 601,
+                        "minY": 92,
+                        "percentage": 0.9864444136619568
+                    },
+                    {
+                        "class": 10,
+                        "className": "A",
+                        "maxX": 751,
+                        "maxY": 142,
+                        "minX": 718,
+                        "minY": 85,
+                        "percentage": 0.8978262543678284
+                    },
+                    {
+                        "class": 4,
+                        "className": "4",
+                        "maxX": 869,
+                        "maxY": 136,
+                        "minX": 836,
+                        "minY": 84,
+                        "percentage": 0.9467198848724365
+                    },
+                    {
+                        "class": 0,
+                        "className": "0",
+                        "maxX": 963,
+                        "maxY": 134,
+                        "minX": 929,
+                        "minY": 87,
+                        "percentage": 0.9888423085212708
+                    },
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 1056,
+                        "maxY": 126,
+                        "minX": 1022,
+                        "minY": 83,
+                        "percentage": 0.8332869410514832
+                    }
+                ],
+                "image": "reasy_log_20194628_144645_274_11.jpg",
+                "imageFilename": "reasy_log_20194628_144645_274_11.jpg",
+                "imageFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_11.jpg"
+            },
+            {
+                "detectionFilename": "reasy_log_20194628_144645_274_12.json",
+                "detectionFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_12.json",
+                "detections": [
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 186,
+                        "maxY": 140,
+                        "minX": 153,
+                        "minY": 96,
+                        "percentage": 0.7039017081260681
+                    },
+                    {
+                        "class": 3,
+                        "className": "3",
+                        "maxX": 281,
+                        "maxY": 142,
+                        "minX": 248,
+                        "minY": 96,
+                        "percentage": 0.7892619967460632
+                    },
+                    {
+                        "class": 8,
+                        "className": "8",
+                        "maxX": 465,
+                        "maxY": 143,
+                        "minX": 429,
+                        "minY": 93,
+                        "percentage": 0.9930360913276672
+                    },
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 558,
+                        "maxY": 139,
+                        "minX": 522,
+                        "minY": 90,
+                        "percentage": 0.9948377013206482
+                    },
+                    {
+                        "class": 6,
+                        "className": "6",
+                        "maxX": 649,
+                        "maxY": 137,
+                        "minX": 616,
+                        "minY": 92,
+                        "percentage": 0.9958779215812683
+                    },
+                    {
+                        "class": 10,
+                        "className": "A",
+                        "maxX": 764,
+                        "maxY": 141,
+                        "minX": 732,
+                        "minY": 85,
+                        "percentage": 0.9702812433242798
+                    },
+                    {
+                        "class": 4,
+                        "className": "4",
+                        "maxX": 881,
+                        "maxY": 138,
+                        "minX": 849,
+                        "minY": 84,
+                        "percentage": 0.9648413062095642
+                    },
+                    {
+                        "class": 0,
+                        "className": "0",
+                        "maxX": 977,
+                        "maxY": 135,
+                        "minX": 943,
+                        "minY": 87,
+                        "percentage": 0.9928169250488281
+                    },
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 1069,
+                        "maxY": 130,
+                        "minX": 1036,
+                        "minY": 81,
+                        "percentage": 0.8064136505126953
+                    }
+                ],
+                "image": "reasy_log_20194628_144645_274_12.jpg",
+                "imageFilename": "reasy_log_20194628_144645_274_12.jpg",
+                "imageFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_12.jpg"
+            },
+            {
+                "detectionFilename": "reasy_log_20194628_144645_274_13.json",
+                "detectionFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_13.json",
+                "detections": [
+                    {
+                        "class": 3,
+                        "className": "3",
+                        "maxX": 294,
+                        "maxY": 143,
+                        "minX": 261,
+                        "minY": 95,
+                        "percentage": 0.8511908650398254
+                    },
+                    {
+                        "class": 8,
+                        "className": "8",
+                        "maxX": 477,
+                        "maxY": 143,
+                        "minX": 443,
+                        "minY": 94,
+                        "percentage": 0.9885483384132385
+                    },
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 571,
+                        "maxY": 138,
+                        "minX": 535,
+                        "minY": 90,
+                        "percentage": 0.992403507232666
+                    },
+                    {
+                        "class": 6,
+                        "className": "6",
+                        "maxX": 662,
+                        "maxY": 138,
+                        "minX": 629,
+                        "minY": 92,
+                        "percentage": 0.9968129396438599
+                    },
+                    {
+                        "class": 10,
+                        "className": "A",
+                        "maxX": 777,
+                        "maxY": 138,
+                        "minX": 744,
+                        "minY": 87,
+                        "percentage": 0.9098638296127319
+                    },
+                    {
+                        "class": 4,
+                        "className": "4",
+                        "maxX": 895,
+                        "maxY": 136,
+                        "minX": 862,
+                        "minY": 85,
+                        "percentage": 0.7978116273880005
+                    },
+                    {
+                        "class": 0,
+                        "className": "0",
+                        "maxX": 991,
+                        "maxY": 135,
+                        "minX": 957,
+                        "minY": 87,
+                        "percentage": 0.995150089263916
+                    },
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 1085,
+                        "maxY": 128,
+                        "minX": 1051,
+                        "minY": 82,
+                        "percentage": 0.7880850434303284
+                    }
+                ],
+                "image": "reasy_log_20194628_144645_274_13.jpg",
+                "imageFilename": "reasy_log_20194628_144645_274_13.jpg",
+                "imageFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_13.jpg"
+            },
+            {
+                "detectionFilename": "reasy_log_20194628_144645_274_14.json",
+                "detectionFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_14.json",
+                "detections": [
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 205,
+                        "maxY": 139,
+                        "minX": 165,
+                        "minY": 92,
+                        "percentage": 0.8315021395683289
+                    },
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 391,
+                        "maxY": 148,
+                        "minX": 351,
+                        "minY": 88,
+                        "percentage": 0.7492222189903259
+                    },
+                    {
+                        "class": 8,
+                        "className": "8",
+                        "maxX": 479,
+                        "maxY": 143,
+                        "minX": 445,
+                        "minY": 93,
+                        "percentage": 0.9669543504714966
+                    },
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 573,
+                        "maxY": 139,
+                        "minX": 537,
+                        "minY": 90,
+                        "percentage": 0.9887237548828125
+                    },
+                    {
+                        "class": 6,
+                        "className": "6",
+                        "maxX": 665,
+                        "maxY": 138,
+                        "minX": 631,
+                        "minY": 92,
+                        "percentage": 0.9940569400787354
+                    },
+                    {
+                        "class": 10,
+                        "className": "A",
+                        "maxX": 781,
+                        "maxY": 142,
+                        "minX": 748,
+                        "minY": 84,
+                        "percentage": 0.9746220111846924
+                    },
+                    {
+                        "class": 4,
+                        "className": "4",
+                        "maxX": 897,
+                        "maxY": 137,
+                        "minX": 865,
+                        "minY": 84,
+                        "percentage": 0.9473580718040466
+                    },
+                    {
+                        "class": 0,
+                        "className": "0",
+                        "maxX": 994,
+                        "maxY": 135,
+                        "minX": 960,
+                        "minY": 86,
+                        "percentage": 0.9969211220741272
+                    },
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 1085,
+                        "maxY": 129,
+                        "minX": 1052,
+                        "minY": 82,
+                        "percentage": 0.9496095776557922
+                    }
+                ],
+                "image": "reasy_log_20194628_144645_274_14.jpg",
+                "imageFilename": "reasy_log_20194628_144645_274_14.jpg",
+                "imageFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_14.jpg"
+            },
+            {
+                "detectionFilename": "reasy_log_20194628_144645_274_15.json",
+                "detectionFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_15.json",
+                "detections": [
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 389,
+                        "maxY": 145,
+                        "minX": 353,
+                        "minY": 91,
+                        "percentage": 0.5776240825653076
+                    },
+                    {
+                        "class": 8,
+                        "className": "8",
+                        "maxX": 481,
+                        "maxY": 140,
+                        "minX": 447,
+                        "minY": 92,
+                        "percentage": 0.9569798707962036
+                    },
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 574,
+                        "maxY": 139,
+                        "minX": 540,
+                        "minY": 89,
+                        "percentage": 0.984762966632843
+                    },
+                    {
+                        "class": 6,
+                        "className": "6",
+                        "maxX": 667,
+                        "maxY": 139,
+                        "minX": 633,
+                        "minY": 91,
+                        "percentage": 0.9900278449058533
+                    },
+                    {
+                        "class": 10,
+                        "className": "A",
+                        "maxX": 785,
+                        "maxY": 143,
+                        "minX": 747,
+                        "minY": 82,
+                        "percentage": 0.9562256932258606
+                    },
+                    {
+                        "class": 4,
+                        "className": "4",
+                        "maxX": 900,
+                        "maxY": 136,
+                        "minX": 868,
+                        "minY": 84,
+                        "percentage": 0.9315996766090393
+                    },
+                    {
+                        "class": 0,
+                        "className": "0",
+                        "maxX": 995,
+                        "maxY": 136,
+                        "minX": 961,
+                        "minY": 87,
+                        "percentage": 0.9918845295906067
+                    },
+                    {
+                        "class": 8,
+                        "className": "8",
+                        "maxX": 1087,
+                        "maxY": 131,
+                        "minX": 1053,
+                        "minY": 84,
+                        "percentage": 0.7534341812133789
+                    }
+                ],
+                "image": "reasy_log_20194628_144645_274_15.jpg",
+                "imageFilename": "reasy_log_20194628_144645_274_15.jpg",
+                "imageFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_15.jpg"
+            },
+            {
+                "detectionFilename": "reasy_log_20194628_144645_274_16.json",
+                "detectionFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_16.json",
+                "detections": [
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 206,
+                        "maxY": 142,
+                        "minX": 172,
+                        "minY": 95,
+                        "percentage": 0.8000026941299438
+                    },
+                    {
+                        "class": 3,
+                        "className": "3",
+                        "maxX": 297,
+                        "maxY": 143,
+                        "minX": 264,
+                        "minY": 95,
+                        "percentage": 0.7994871139526367
+                    },
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 389,
+                        "maxY": 144,
+                        "minX": 353,
+                        "minY": 91,
+                        "percentage": 0.7942736148834229
+                    },
+                    {
+                        "class": 8,
+                        "className": "8",
+                        "maxX": 483,
+                        "maxY": 142,
+                        "minX": 447,
+                        "minY": 93,
+                        "percentage": 0.9844220876693726
+                    },
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 574,
+                        "maxY": 139,
+                        "minX": 541,
+                        "minY": 90,
+                        "percentage": 0.9647818207740784
+                    },
+                    {
+                        "class": 6,
+                        "className": "6",
+                        "maxX": 666,
+                        "maxY": 138,
+                        "minX": 633,
+                        "minY": 90,
+                        "percentage": 0.9928204417228699
+                    },
+                    {
+                        "class": 10,
+                        "className": "A",
+                        "maxX": 782,
+                        "maxY": 143,
+                        "minX": 749,
+                        "minY": 84,
+                        "percentage": 0.9634835720062256
+                    },
+                    {
+                        "class": 4,
+                        "className": "4",
+                        "maxX": 900,
+                        "maxY": 138,
+                        "minX": 868,
+                        "minY": 84,
+                        "percentage": 0.8892503380775452
+                    },
+                    {
+                        "class": 0,
+                        "className": "0",
+                        "maxX": 995,
+                        "maxY": 135,
+                        "minX": 962,
+                        "minY": 87,
+                        "percentage": 0.99224853515625
+                    },
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 1088,
+                        "maxY": 130,
+                        "minX": 1054,
+                        "minY": 80,
+                        "percentage": 0.902777373790741
+                    }
+                ],
+                "image": "reasy_log_20194628_144645_274_16.jpg",
+                "imageFilename": "reasy_log_20194628_144645_274_16.jpg",
+                "imageFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_16.jpg"
+            },
+            {
+                "detectionFilename": "reasy_log_20194628_144645_274_17.json",
+                "detectionFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_17.json",
+                "detections": [
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 390,
+                        "maxY": 144,
+                        "minX": 353,
+                        "minY": 92,
+                        "percentage": 0.7134658694267273
+                    },
+                    {
+                        "class": 8,
+                        "className": "8",
+                        "maxX": 483,
+                        "maxY": 142,
+                        "minX": 447,
+                        "minY": 93,
+                        "percentage": 0.9704120755195618
+                    },
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 574,
+                        "maxY": 140,
+                        "minX": 540,
+                        "minY": 90,
+                        "percentage": 0.9795690774917603
+                    },
+                    {
+                        "class": 6,
+                        "className": "6",
+                        "maxX": 667,
+                        "maxY": 138,
+                        "minX": 633,
+                        "minY": 91,
+                        "percentage": 0.9878119230270386
+                    },
+                    {
+                        "class": 10,
+                        "className": "A",
+                        "maxX": 787,
+                        "maxY": 143,
+                        "minX": 747,
+                        "minY": 82,
+                        "percentage": 0.9417691826820374
+                    },
+                    {
+                        "class": 4,
+                        "className": "4",
+                        "maxX": 900,
+                        "maxY": 136,
+                        "minX": 868,
+                        "minY": 84,
+                        "percentage": 0.8775939345359802
+                    },
+                    {
+                        "class": 0,
+                        "className": "0",
+                        "maxX": 995,
+                        "maxY": 135,
+                        "minX": 961,
+                        "minY": 87,
+                        "percentage": 0.9950748085975647
+                    },
+                    {
+                        "class": 8,
+                        "className": "8",
+                        "maxX": 1089,
+                        "maxY": 131,
+                        "minX": 1053,
+                        "minY": 84,
+                        "percentage": 0.8283208608627319
+                    }
+                ],
+                "image": "reasy_log_20194628_144645_274_17.jpg",
+                "imageFilename": "reasy_log_20194628_144645_274_17.jpg",
+                "imageFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_17.jpg"
+            },
+            {
+                "detectionFilename": "reasy_log_20194628_144645_274_18.json",
+                "detectionFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_18.json",
+                "detections": [
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 206,
+                        "maxY": 141,
+                        "minX": 172,
+                        "minY": 94,
+                        "percentage": 0.7839161157608032
+                    },
+                    {
+                        "class": 3,
+                        "className": "3",
+                        "maxX": 297,
+                        "maxY": 144,
+                        "minX": 264,
+                        "minY": 95,
+                        "percentage": 0.528407633304596
+                    },
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 389,
+                        "maxY": 145,
+                        "minX": 353,
+                        "minY": 92,
+                        "percentage": 0.6713562607765198
+                    },
+                    {
+                        "class": 8,
+                        "className": "8",
+                        "maxX": 483,
+                        "maxY": 142,
+                        "minX": 447,
+                        "minY": 93,
+                        "percentage": 0.9746149182319641
+                    },
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 574,
+                        "maxY": 140,
+                        "minX": 540,
+                        "minY": 89,
+                        "percentage": 0.9866400361061096
+                    },
+                    {
+                        "class": 6,
+                        "className": "6",
+                        "maxX": 667,
+                        "maxY": 138,
+                        "minX": 633,
+                        "minY": 91,
+                        "percentage": 0.9842247366905212
+                    },
+                    {
+                        "class": 10,
+                        "className": "A",
+                        "maxX": 782,
+                        "maxY": 141,
+                        "minX": 749,
+                        "minY": 84,
+                        "percentage": 0.9733526110649109
+                    },
+                    {
+                        "class": 4,
+                        "className": "4",
+                        "maxX": 900,
+                        "maxY": 136,
+                        "minX": 868,
+                        "minY": 85,
+                        "percentage": 0.9466652870178223
+                    },
+                    {
+                        "class": 0,
+                        "className": "0",
+                        "maxX": 995,
+                        "maxY": 135,
+                        "minX": 961,
+                        "minY": 87,
+                        "percentage": 0.996770441532135
+                    },
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 1087,
+                        "maxY": 129,
+                        "minX": 1053,
+                        "minY": 81,
+                        "percentage": 0.9732677936553955
+                    }
+                ],
+                "image": "reasy_log_20194628_144645_274_18.jpg",
+                "imageFilename": "reasy_log_20194628_144645_274_18.jpg",
+                "imageFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_18.jpg"
+            },
+            {
+                "detectionFilename": "reasy_log_20194628_144645_274_19.json",
+                "detectionFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_19.json",
+                "detections": [
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 223,
+                        "maxY": 139,
+                        "minX": 189,
+                        "minY": 92,
+                        "percentage": 0.8288480043411255
+                    },
+                    {
+                        "class": 3,
+                        "className": "3",
+                        "maxX": 316,
+                        "maxY": 142,
+                        "minX": 282,
+                        "minY": 95,
+                        "percentage": 0.8634649515151978
+                    },
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 408,
+                        "maxY": 143,
+                        "minX": 372,
+                        "minY": 89,
+                        "percentage": 0.5783609747886658
+                    },
+                    {
+                        "class": 8,
+                        "className": "8",
+                        "maxX": 498,
+                        "maxY": 142,
+                        "minX": 464,
+                        "minY": 94,
+                        "percentage": 0.9584515690803528
+                    },
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 594,
+                        "maxY": 139,
+                        "minX": 558,
+                        "minY": 90,
+                        "percentage": 0.9925586581230164
+                    },
+                    {
+                        "class": 6,
+                        "className": "6",
+                        "maxX": 685,
+                        "maxY": 138,
+                        "minX": 652,
+                        "minY": 91,
+                        "percentage": 0.9968594908714294
+                    },
+                    {
+                        "class": 10,
+                        "className": "A",
+                        "maxX": 797,
+                        "maxY": 139,
+                        "minX": 765,
+                        "minY": 85,
+                        "percentage": 0.942133367061615
+                    },
+                    {
+                        "class": 4,
+                        "className": "4",
+                        "maxX": 919,
+                        "maxY": 138,
+                        "minX": 886,
+                        "minY": 83,
+                        "percentage": 0.9562639594078064
+                    },
+                    {
+                        "class": 0,
+                        "className": "0",
+                        "maxX": 1013,
+                        "maxY": 136,
+                        "minX": 979,
+                        "minY": 86,
+                        "percentage": 0.9957780838012695
+                    },
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 1107,
+                        "maxY": 128,
+                        "minX": 1073,
+                        "minY": 81,
+                        "percentage": 0.95096355676651
+                    }
+                ],
+                "image": "reasy_log_20194628_144645_274_19.jpg",
+                "imageFilename": "reasy_log_20194628_144645_274_19.jpg",
+                "imageFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_19.jpg"
+            },
+            {
+                "detectionFilename": "reasy_log_20194628_144645_274_20.json",
+                "detectionFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_20.json",
+                "detections": [
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 248,
+                        "maxY": 140,
+                        "minX": 207,
+                        "minY": 91,
+                        "percentage": 0.900943398475647
+                    },
+                    {
+                        "class": 3,
+                        "className": "3",
+                        "maxX": 341,
+                        "maxY": 141,
+                        "minX": 299,
+                        "minY": 91,
+                        "percentage": 0.886306643486023
+                    },
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 431,
+                        "maxY": 143,
+                        "minX": 391,
+                        "minY": 87,
+                        "percentage": 0.8859388828277588
+                    },
+                    {
+                        "class": 8,
+                        "className": "8",
+                        "maxX": 525,
+                        "maxY": 140,
+                        "minX": 485,
+                        "minY": 91,
+                        "percentage": 0.9572126865386963
+                    },
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 616,
+                        "maxY": 139,
+                        "minX": 582,
+                        "minY": 90,
+                        "percentage": 0.9914399981498718
+                    },
+                    {
+                        "class": 6,
+                        "className": "6",
+                        "maxX": 707,
+                        "maxY": 138,
+                        "minX": 674,
+                        "minY": 90,
+                        "percentage": 0.9972286820411682
+                    },
+                    {
+                        "class": 10,
+                        "className": "A",
+                        "maxX": 824,
+                        "maxY": 142,
+                        "minX": 791,
+                        "minY": 84,
+                        "percentage": 0.9868456721305847
+                    },
+                    {
+                        "class": 4,
+                        "className": "4",
+                        "maxX": 940,
+                        "maxY": 135,
+                        "minX": 908,
+                        "minY": 84,
+                        "percentage": 0.9493221640586853
+                    },
+                    {
+                        "class": 0,
+                        "className": "0",
+                        "maxX": 1037,
+                        "maxY": 134,
+                        "minX": 1003,
+                        "minY": 86,
+                        "percentage": 0.9947437047958374
+                    },
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 1133,
+                        "maxY": 130,
+                        "minX": 1093,
+                        "minY": 79,
+                        "percentage": 0.9186218976974487
+                    }
+                ],
+                "image": "reasy_log_20194628_144645_274_20.jpg",
+                "imageFilename": "reasy_log_20194628_144645_274_20.jpg",
+                "imageFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_20.jpg"
+            },
+            {
+                "detectionFilename": "reasy_log_20194628_144645_274_21.json",
+                "detectionFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_21.json",
+                "detections": [
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 263,
+                        "maxY": 140,
+                        "minX": 223,
+                        "minY": 90,
+                        "percentage": 0.9502298831939697
+                    },
+                    {
+                        "class": 3,
+                        "className": "3",
+                        "maxX": 356,
+                        "maxY": 141,
+                        "minX": 320,
+                        "minY": 94,
+                        "percentage": 0.8123843669891357
+                    },
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 447,
+                        "maxY": 144,
+                        "minX": 407,
+                        "minY": 87,
+                        "percentage": 0.8500040769577026
+                    },
+                    {
+                        "class": 8,
+                        "className": "8",
+                        "maxX": 537,
+                        "maxY": 139,
+                        "minX": 503,
+                        "minY": 91,
+                        "percentage": 0.9650291800498962
+                    },
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 631,
+                        "maxY": 137,
+                        "minX": 597,
+                        "minY": 90,
+                        "percentage": 0.9967688918113708
+                    },
+                    {
+                        "class": 6,
+                        "className": "6",
+                        "maxX": 722,
+                        "maxY": 137,
+                        "minX": 690,
+                        "minY": 91,
+                        "percentage": 0.9988163709640503
+                    },
+                    {
+                        "class": 10,
+                        "className": "A",
+                        "maxX": 840,
+                        "maxY": 138,
+                        "minX": 806,
+                        "minY": 86,
+                        "percentage": 0.9448398947715759
+                    },
+                    {
+                        "class": 4,
+                        "className": "4",
+                        "maxX": 956,
+                        "maxY": 136,
+                        "minX": 923,
+                        "minY": 83,
+                        "percentage": 0.9404783248901367
+                    },
+                    {
+                        "class": 0,
+                        "className": "0",
+                        "maxX": 1054,
+                        "maxY": 134,
+                        "minX": 1014,
+                        "minY": 85,
+                        "percentage": 0.9678144454956055
+                    },
+                    {
+                        "class": 8,
+                        "className": "8",
+                        "maxX": 1146,
+                        "maxY": 128,
+                        "minX": 1110,
+                        "minY": 81,
+                        "percentage": 0.7753481268882751
+                    }
+                ],
+                "image": "reasy_log_20194628_144645_274_21.jpg",
+                "imageFilename": "reasy_log_20194628_144645_274_21.jpg",
+                "imageFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_21.jpg"
+            },
+            {
+                "detectionFilename": "reasy_log_20194628_144645_274_22.json",
+                "detectionFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_22.json",
+                "detections": [
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 281,
+                        "maxY": 140,
+                        "minX": 240,
+                        "minY": 90,
+                        "percentage": 0.9247157573699951
+                    },
+                    {
+                        "class": 3,
+                        "className": "3",
+                        "maxX": 373,
+                        "maxY": 141,
+                        "minX": 332,
+                        "minY": 90,
+                        "percentage": 0.9720697402954102
+                    },
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 464,
+                        "maxY": 144,
+                        "minX": 424,
+                        "minY": 86,
+                        "percentage": 0.9775660037994385
+                    },
+                    {
+                        "class": 8,
+                        "className": "8",
+                        "maxX": 558,
+                        "maxY": 140,
+                        "minX": 518,
+                        "minY": 90,
+                        "percentage": 0.9568197727203369
+                    },
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 649,
+                        "maxY": 138,
+                        "minX": 615,
+                        "minY": 89,
+                        "percentage": 0.9949043989181519
+                    },
+                    {
+                        "class": 6,
+                        "className": "6",
+                        "maxX": 740,
+                        "maxY": 137,
+                        "minX": 707,
+                        "minY": 90,
+                        "percentage": 0.993209958076477
+                    },
+                    {
+                        "class": 10,
+                        "className": "A",
+                        "maxX": 858,
+                        "maxY": 140,
+                        "minX": 824,
+                        "minY": 86,
+                        "percentage": 0.9906447529792786
+                    },
+                    {
+                        "class": 4,
+                        "className": "4",
+                        "maxX": 974,
+                        "maxY": 136,
+                        "minX": 941,
+                        "minY": 83,
+                        "percentage": 0.9797976613044739
+                    },
+                    {
+                        "class": 0,
+                        "className": "0",
+                        "maxX": 1073,
+                        "maxY": 134,
+                        "minX": 1032,
+                        "minY": 85,
+                        "percentage": 0.9857691526412964
+                    },
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 1166,
+                        "maxY": 129,
+                        "minX": 1126,
+                        "minY": 77,
+                        "percentage": 0.8021295070648193
+                    }
+                ],
+                "image": "reasy_log_20194628_144645_274_22.jpg",
+                "imageFilename": "reasy_log_20194628_144645_274_22.jpg",
+                "imageFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_22.jpg"
+            },
+            {
+                "detectionFilename": "reasy_log_20194628_144645_274_23.json",
+                "detectionFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_23.json",
+                "detections": [
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 301,
+                        "maxY": 140,
+                        "minX": 260,
+                        "minY": 89,
+                        "percentage": 0.9868938326835632
+                    },
+                    {
+                        "class": 3,
+                        "className": "3",
+                        "maxX": 395,
+                        "maxY": 141,
+                        "minX": 354,
+                        "minY": 90,
+                        "percentage": 0.9645387530326843
+                    },
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 485,
+                        "maxY": 143,
+                        "minX": 444,
+                        "minY": 85,
+                        "percentage": 0.9957263469696045
+                    },
+                    {
+                        "class": 8,
+                        "className": "8",
+                        "maxX": 575,
+                        "maxY": 138,
+                        "minX": 541,
+                        "minY": 92,
+                        "percentage": 0.9484032392501831
+                    },
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 669,
+                        "maxY": 137,
+                        "minX": 635,
+                        "minY": 89,
+                        "percentage": 0.9970042705535889
+                    },
+                    {
+                        "class": 6,
+                        "className": "6",
+                        "maxX": 761,
+                        "maxY": 138,
+                        "minX": 728,
+                        "minY": 90,
+                        "percentage": 0.9949967861175537
+                    },
+                    {
+                        "class": 10,
+                        "className": "A",
+                        "maxX": 878,
+                        "maxY": 139,
+                        "minX": 844,
+                        "minY": 85,
+                        "percentage": 0.9788952469825745
+                    },
+                    {
+                        "class": 4,
+                        "className": "4",
+                        "maxX": 994,
+                        "maxY": 136,
+                        "minX": 961,
+                        "minY": 82,
+                        "percentage": 0.9780608415603638
+                    },
+                    {
+                        "class": 0,
+                        "className": "0",
+                        "maxX": 1094,
+                        "maxY": 134,
+                        "minX": 1053,
+                        "minY": 85,
+                        "percentage": 0.9932680726051331
+                    }
+                ],
+                "image": "reasy_log_20194628_144645_274_23.jpg",
+                "imageFilename": "reasy_log_20194628_144645_274_23.jpg",
+                "imageFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_23.jpg"
+            },
+            {
+                "detectionFilename": "reasy_log_20194628_144645_274_24.json",
+                "detectionFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_24.json",
+                "detections": [
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 323,
+                        "maxY": 140,
+                        "minX": 281,
+                        "minY": 89,
+                        "percentage": 0.9620043039321899
+                    },
+                    {
+                        "class": 3,
+                        "className": "3",
+                        "maxX": 417,
+                        "maxY": 140,
+                        "minX": 376,
+                        "minY": 89,
+                        "percentage": 0.90358966588974
+                    },
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 507,
+                        "maxY": 143,
+                        "minX": 466,
+                        "minY": 85,
+                        "percentage": 0.9926553964614868
+                    },
+                    {
+                        "class": 8,
+                        "className": "8",
+                        "maxX": 598,
+                        "maxY": 139,
+                        "minX": 564,
+                        "minY": 91,
+                        "percentage": 0.9824363589286804
+                    },
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 691,
+                        "maxY": 137,
+                        "minX": 657,
+                        "minY": 88,
+                        "percentage": 0.9967658519744873
+                    },
+                    {
+                        "class": 6,
+                        "className": "6",
+                        "maxX": 784,
+                        "maxY": 138,
+                        "minX": 751,
+                        "minY": 89,
+                        "percentage": 0.9979375004768372
+                    },
+                    {
+                        "class": 10,
+                        "className": "A",
+                        "maxX": 900,
+                        "maxY": 139,
+                        "minX": 866,
+                        "minY": 85,
+                        "percentage": 0.9877634644508362
+                    },
+                    {
+                        "class": 4,
+                        "className": "4",
+                        "maxX": 1016,
+                        "maxY": 135,
+                        "minX": 982,
+                        "minY": 81,
+                        "percentage": 0.9607343077659607
+                    },
+                    {
+                        "class": 0,
+                        "className": "0",
+                        "maxX": 1117,
+                        "maxY": 134,
+                        "minX": 1076,
+                        "minY": 85,
+                        "percentage": 0.9893488883972168
+                    },
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 1208,
+                        "maxY": 129,
+                        "minX": 1168,
+                        "minY": 78,
+                        "percentage": 0.8205779790878296
+                    }
+                ],
+                "image": "reasy_log_20194628_144645_274_24.jpg",
+                "imageFilename": "reasy_log_20194628_144645_274_24.jpg",
+                "imageFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_24.jpg"
+            },
+            {
+                "detectionFilename": "reasy_log_20194628_144645_274_25.json",
+                "detectionFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_25.json",
+                "detections": [
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 348,
+                        "maxY": 139,
+                        "minX": 307,
+                        "minY": 89,
+                        "percentage": 0.989338219165802
+                    },
+                    {
+                        "class": 3,
+                        "className": "3",
+                        "maxX": 443,
+                        "maxY": 140,
+                        "minX": 402,
+                        "minY": 90,
+                        "percentage": 0.9791133999824524
+                    },
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 531,
+                        "maxY": 140,
+                        "minX": 491,
+                        "minY": 89,
+                        "percentage": 0.9730246663093567
+                    },
+                    {
+                        "class": 8,
+                        "className": "8",
+                        "maxX": 623,
+                        "maxY": 139,
+                        "minX": 589,
+                        "minY": 91,
+                        "percentage": 0.9755991101264954
+                    },
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 715,
+                        "maxY": 135,
+                        "minX": 681,
+                        "minY": 89,
+                        "percentage": 0.9977811574935913
+                    },
+                    {
+                        "class": 6,
+                        "className": "6",
+                        "maxX": 807,
+                        "maxY": 138,
+                        "minX": 774,
+                        "minY": 89,
+                        "percentage": 0.989995539188385
+                    },
+                    {
+                        "class": 10,
+                        "className": "A",
+                        "maxX": 924,
+                        "maxY": 136,
+                        "minX": 890,
+                        "minY": 87,
+                        "percentage": 0.9562373757362366
+                    },
+                    {
+                        "class": 4,
+                        "className": "4",
+                        "maxX": 1041,
+                        "maxY": 135,
+                        "minX": 1007,
+                        "minY": 83,
+                        "percentage": 0.951170802116394
+                    },
+                    {
+                        "class": 0,
+                        "className": "0",
+                        "maxX": 1139,
+                        "maxY": 133,
+                        "minX": 1103,
+                        "minY": 85,
+                        "percentage": 0.9854996800422668
+                    },
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 1230,
+                        "maxY": 129,
+                        "minX": 1194,
+                        "minY": 81,
+                        "percentage": 0.7333634495735168
+                    }
+                ],
+                "image": "reasy_log_20194628_144645_274_25.jpg",
+                "imageFilename": "reasy_log_20194628_144645_274_25.jpg",
+                "imageFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_25.jpg"
+            },
+            {
+                "detectionFilename": "reasy_log_20194628_144645_274_26.json",
+                "detectionFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_26.json",
+                "detections": [
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 375,
+                        "maxY": 140,
+                        "minX": 331,
+                        "minY": 89,
+                        "percentage": 0.988275408744812
+                    },
+                    {
+                        "class": 3,
+                        "className": "3",
+                        "maxX": 466,
+                        "maxY": 141,
+                        "minX": 424,
+                        "minY": 89,
+                        "percentage": 0.9884486794471741
+                    },
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 556,
+                        "maxY": 143,
+                        "minX": 516,
+                        "minY": 86,
+                        "percentage": 0.9909057021141052
+                    },
+                    {
+                        "class": 8,
+                        "className": "8",
+                        "maxX": 648,
+                        "maxY": 137,
+                        "minX": 614,
+                        "minY": 92,
+                        "percentage": 0.9347087144851685
+                    },
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 740,
+                        "maxY": 135,
+                        "minX": 706,
+                        "minY": 88,
+                        "percentage": 0.9918261766433716
+                    },
+                    {
+                        "class": 6,
+                        "className": "6",
+                        "maxX": 833,
+                        "maxY": 139,
+                        "minX": 799,
+                        "minY": 88,
+                        "percentage": 0.9908467531204224
+                    },
+                    {
+                        "class": 10,
+                        "className": "A",
+                        "maxX": 950,
+                        "maxY": 137,
+                        "minX": 916,
+                        "minY": 85,
+                        "percentage": 0.9790758490562439
+                    },
+                    {
+                        "class": 4,
+                        "className": "4",
+                        "maxX": 1065,
+                        "maxY": 134,
+                        "minX": 1032,
+                        "minY": 84,
+                        "percentage": 0.9494571089744568
+                    },
+                    {
+                        "class": 0,
+                        "className": "0",
+                        "maxX": 1162,
+                        "maxY": 134,
+                        "minX": 1128,
+                        "minY": 85,
+                        "percentage": 0.9961528182029724
+                    },
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 1259,
+                        "maxY": 128,
+                        "minX": 1218,
+                        "minY": 80,
+                        "percentage": 0.7434295415878296
+                    }
+                ],
+                "image": "reasy_log_20194628_144645_274_26.jpg",
+                "imageFilename": "reasy_log_20194628_144645_274_26.jpg",
+                "imageFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_26.jpg"
+            },
+            {
+                "detectionFilename": "reasy_log_20194628_144645_274_27.json",
+                "detectionFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_27.json",
+                "detections": [
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 399,
+                        "maxY": 139,
+                        "minX": 357,
+                        "minY": 89,
+                        "percentage": 0.9847303628921509
+                    },
+                    {
+                        "class": 3,
+                        "className": "3",
+                        "maxX": 492,
+                        "maxY": 140,
+                        "minX": 451,
+                        "minY": 89,
+                        "percentage": 0.9083898663520813
+                    },
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 581,
+                        "maxY": 139,
+                        "minX": 541,
+                        "minY": 87,
+                        "percentage": 0.9661837816238403
+                    },
+                    {
+                        "class": 8,
+                        "className": "8",
+                        "maxX": 673,
+                        "maxY": 140,
+                        "minX": 639,
+                        "minY": 91,
+                        "percentage": 0.9835717082023621
+                    },
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 766,
+                        "maxY": 138,
+                        "minX": 732,
+                        "minY": 87,
+                        "percentage": 0.9900099635124207
+                    },
+                    {
+                        "class": 6,
+                        "className": "6",
+                        "maxX": 858,
+                        "maxY": 138,
+                        "minX": 824,
+                        "minY": 89,
+                        "percentage": 0.9935745596885681
+                    },
+                    {
+                        "class": 10,
+                        "className": "A",
+                        "maxX": 975,
+                        "maxY": 137,
+                        "minX": 941,
+                        "minY": 85,
+                        "percentage": 0.9877153038978577
+                    },
+                    {
+                        "class": 4,
+                        "className": "4",
+                        "maxX": 1091,
+                        "maxY": 134,
+                        "minX": 1058,
+                        "minY": 83,
+                        "percentage": 0.9666124582290649
+                    },
+                    {
+                        "class": 0,
+                        "className": "0",
+                        "maxX": 1188,
+                        "maxY": 133,
+                        "minX": 1152,
+                        "minY": 84,
+                        "percentage": 0.9949970841407776
+                    },
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 1279,
+                        "maxY": 128,
+                        "minX": 1245,
+                        "minY": 80,
+                        "percentage": 0.9440127015113831
+                    }
+                ],
+                "image": "reasy_log_20194628_144645_274_27.jpg",
+                "imageFilename": "reasy_log_20194628_144645_274_27.jpg",
+                "imageFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_27.jpg"
+            },
+            {
+                "detectionFilename": "reasy_log_20194628_144645_274_28.json",
+                "detectionFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_28.json",
+                "detections": [
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 425,
+                        "maxY": 139,
+                        "minX": 381,
+                        "minY": 87,
+                        "percentage": 0.9982527494430542
+                    },
+                    {
+                        "class": 3,
+                        "className": "3",
+                        "maxX": 517,
+                        "maxY": 141,
+                        "minX": 476,
+                        "minY": 89,
+                        "percentage": 0.9803436994552612
+                    },
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 607,
+                        "maxY": 142,
+                        "minX": 566,
+                        "minY": 85,
+                        "percentage": 0.9841136336326599
+                    },
+                    {
+                        "class": 8,
+                        "className": "8",
+                        "maxX": 700,
+                        "maxY": 140,
+                        "minX": 664,
+                        "minY": 91,
+                        "percentage": 0.9755100011825562
+                    },
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 791,
+                        "maxY": 137,
+                        "minX": 757,
+                        "minY": 86,
+                        "percentage": 0.9824637174606323
+                    },
+                    {
+                        "class": 6,
+                        "className": "6",
+                        "maxX": 886,
+                        "maxY": 138,
+                        "minX": 852,
+                        "minY": 88,
+                        "percentage": 0.990598738193512
+                    },
+                    {
+                        "class": 10,
+                        "className": "A",
+                        "maxX": 1000,
+                        "maxY": 138,
+                        "minX": 966,
+                        "minY": 85,
+                        "percentage": 0.9492805004119873
+                    },
+                    {
+                        "class": 4,
+                        "className": "4",
+                        "maxX": 1117,
+                        "maxY": 134,
+                        "minX": 1083,
+                        "minY": 83,
+                        "percentage": 0.9643021821975708
+                    },
+                    {
+                        "class": 0,
+                        "className": "0",
+                        "maxX": 1212,
+                        "maxY": 132,
+                        "minX": 1178,
+                        "minY": 85,
+                        "percentage": 0.9833878874778748
+                    },
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 1308,
+                        "maxY": 126,
+                        "minX": 1272,
+                        "minY": 81,
+                        "percentage": 0.7177519798278809
+                    }
+                ],
+                "image": "reasy_log_20194628_144645_274_28.jpg",
+                "imageFilename": "reasy_log_20194628_144645_274_28.jpg",
+                "imageFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_28.jpg"
+            },
+            {
+                "detectionFilename": "reasy_log_20194628_144645_274_29.json",
+                "detectionFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_29.json",
+                "detections": [
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 448,
+                        "maxY": 139,
+                        "minX": 406,
+                        "minY": 87,
+                        "percentage": 0.9967049360275269
+                    },
+                    {
+                        "class": 3,
+                        "className": "3",
+                        "maxX": 538,
+                        "maxY": 140,
+                        "minX": 504,
+                        "minY": 90,
+                        "percentage": 0.9129962921142578
+                    },
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 630,
+                        "maxY": 139,
+                        "minX": 594,
+                        "minY": 88,
+                        "percentage": 0.9903967380523682
+                    },
+                    {
+                        "class": 8,
+                        "className": "8",
+                        "maxX": 725,
+                        "maxY": 140,
+                        "minX": 689,
+                        "minY": 90,
+                        "percentage": 0.9933753609657288
+                    },
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 816,
+                        "maxY": 137,
+                        "minX": 782,
+                        "minY": 87,
+                        "percentage": 0.9867379069328308
+                    },
+                    {
+                        "class": 6,
+                        "className": "6",
+                        "maxX": 909,
+                        "maxY": 137,
+                        "minX": 876,
+                        "minY": 88,
+                        "percentage": 0.9982035160064697
+                    },
+                    {
+                        "class": 10,
+                        "className": "A",
+                        "maxX": 1024,
+                        "maxY": 137,
+                        "minX": 990,
+                        "minY": 85,
+                        "percentage": 0.9866438508033752
+                    },
+                    {
+                        "class": 4,
+                        "className": "4",
+                        "maxX": 1141,
+                        "maxY": 133,
+                        "minX": 1108,
+                        "minY": 83,
+                        "percentage": 0.9649799466133118
+                    },
+                    {
+                        "class": 0,
+                        "className": "0",
+                        "maxX": 1237,
+                        "maxY": 131,
+                        "minX": 1203,
+                        "minY": 85,
+                        "percentage": 0.9937502145767212
+                    },
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 1333,
+                        "maxY": 125,
+                        "minX": 1297,
+                        "minY": 79,
+                        "percentage": 0.9784507751464844
+                    }
+                ],
+                "image": "reasy_log_20194628_144645_274_29.jpg",
+                "imageFilename": "reasy_log_20194628_144645_274_29.jpg",
+                "imageFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_29.jpg"
+            },
+            {
+                "detectionFilename": "reasy_log_20194628_144645_274_30.json",
+                "detectionFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_30.json",
+                "detections": [
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 470,
+                        "maxY": 139,
+                        "minX": 428,
+                        "minY": 87,
+                        "percentage": 0.9949225783348083
+                    },
+                    {
+                        "class": 3,
+                        "className": "3",
+                        "maxX": 565,
+                        "maxY": 140,
+                        "minX": 524,
+                        "minY": 88,
+                        "percentage": 0.9584348797798157
+                    },
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 656,
+                        "maxY": 141,
+                        "minX": 615,
+                        "minY": 84,
+                        "percentage": 0.989841103553772
+                    },
+                    {
+                        "class": 8,
+                        "className": "8",
+                        "maxX": 746,
+                        "maxY": 138,
+                        "minX": 712,
+                        "minY": 89,
+                        "percentage": 0.986890435218811
+                    },
+                    {
+                        "class": 9,
+                        "className": "9",
+                        "maxX": 838,
+                        "maxY": 137,
+                        "minX": 804,
+                        "minY": 87,
+                        "percentage": 0.9939972758293152
+                    },
+                    {
+                        "class": 6,
+                        "className": "6",
+                        "maxX": 932,
+                        "maxY": 136,
+                        "minX": 898,
+                        "minY": 88,
+                        "percentage": 0.9988093972206116
+                    },
+                    {
+                        "class": 10,
+                        "className": "A",
+                        "maxX": 1048,
+                        "maxY": 136,
+                        "minX": 1014,
+                        "minY": 85,
+                        "percentage": 0.9841532111167908
+                    },
+                    {
+                        "class": 4,
+                        "className": "4",
+                        "maxX": 1166,
+                        "maxY": 133,
+                        "minX": 1132,
+                        "minY": 83,
+                        "percentage": 0.9677865505218506
+                    },
+                    {
+                        "class": 0,
+                        "className": "0",
+                        "maxX": 1262,
+                        "maxY": 132,
+                        "minX": 1226,
+                        "minY": 85,
+                        "percentage": 0.9927747845649719
+                    },
+                    {
+                        "class": 2,
+                        "className": "2",
+                        "maxX": 1356,
+                        "maxY": 126,
+                        "minX": 1316,
+                        "minY": 79,
+                        "percentage": 0.9555884599685669
+                    }
+                ],
+                "image": "reasy_log_20194628_144645_274_30.jpg",
+                "imageFilename": "reasy_log_20194628_144645_274_30.jpg",
+                "imageFilepath": "/home/golem/ReaSyLog/20190828_144645274/reasy_log_20194628_144645_274_30.jpg"
+            }
+        ],
+        "endTimestamp": "2019-08-28 14:47:11:040",
+        "foundStamp": "932896A402",
+        "path": "/home/golem/ReaSyLog/20190828_144645274",
+        "startTimestamp": "2019-08-28 14:46:45:274"
+    },
+    "type": "stamp"
+}
