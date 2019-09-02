@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OcrAppWPF.Views"
         mc:Ignorable="d" FontSize="18"
-        Title="OcrApp" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+        Title="OcrApp" Height="450" Width="600" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
@@ -15,8 +15,7 @@
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="20"/>
             <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="20"/>
-            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="20"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -27,21 +26,21 @@
         </Grid.RowDefinitions>
         
         <!-- Row 1 -->
-        <TextBlock Text="WebSocket:" Grid.Row ="1" Grid.Column="1" Grid.ColumnSpan="2"></TextBlock>
+        <TextBlock Text="WebSocket:" Grid.Row ="1" Grid.Column="1"> </TextBlock>
         <TextBlock Text="{Binding Path=WebSocketStatus, Mode=OneWay}" Foreground="{Binding Path=WebSocketStatusColor, Mode=OneWay}" 
                    Grid.Row ="1" Grid.Column="2"></TextBlock>
-        <Button x:Name="OpenWebSocket" Grid.Row="1" Grid.Column="4"> Open WebSocket </Button>
-        <Button x:Name="CloseWebSocket" Grid.Row="1" Grid.Column="6">Close WebSocket</Button>
+        <Button x:Name="OpenWebSocket" Grid.Row="1" Grid.Column="4" > Open WebSocket </Button>
+        <Button x:Name="CloseWebSocket" Grid.Row="1" Grid.Column="6"> Close WebSocket </Button>
 
         <!-- Row 2 -->
        
-        <GroupBox Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="5">
-            <DataGrid ItemsSource="{Binding ReceivedData, Mode=OneWay}" AutoGenerateColumns="False" RowBackground="LightGoldenrodYellow" 
-                      AlternatingRowBackground="LightGray">
+        <GroupBox Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="7" >
+            <DataGrid ItemsSource="{Binding ReceivedDataBindableCollection, Mode=OneWay}" AutoGenerateColumns="False" 
+                      RowBackground="LightGoldenrodYellow" AlternatingRowBackground="LightGray">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Stamp" Binding="{Binding FoundStamp}" />
-                    <DataGridTextColumn Header="Start Timestamp" Binding="{Binding startTimestamp}"/>
-                    <DataGridTextColumn Header="End Timestamp" Binding="{Binding endTimestamp}"/>
+                    <DataGridTextColumn Header="Start Timestamp" Binding="{Binding StartTimestamp}"/>
+                    <DataGridTextColumn Header="End Timestamp" Binding="{Binding EndTimestamp}"/>
                 </DataGrid.Columns>
             </DataGrid>
         </GroupBox>
