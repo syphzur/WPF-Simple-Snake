@@ -12,7 +12,7 @@ namespace OcrApp
         [JsonProperty(PropertyName = "class")]
         public int ClassId { get; set; }
         [JsonProperty(PropertyName = "className")]
-        public string ClassName { get; set; }
+        public char ClassName { get; set; }
         [JsonProperty(PropertyName = "maxX")]
         public int MaxX { get; set; }
         [JsonProperty(PropertyName = "maxY")]

@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace OcrApp
 {
@@ -17,5 +18,20 @@ namespace OcrApp
         public string ImageFilepath { get; set; }
         [JsonProperty(PropertyName = "detections")]
         public List<DetectionStruct> DetectionData { get; set; } = new List<DetectionStruct>();
+        public double MinPercentage
+        {
+            get
+            {
+                return DetectionData.Min(x => x.Percentage);
+            }
+        }
+        public char CharWithMinPercentage
+        {
+            get
+            {
+                DetectionData.Sort((x, y) => x.Percentage.CompareTo(y.Percentage));
+                return DetectionData.First().ClassName;
+            }
+        }
     }
 }

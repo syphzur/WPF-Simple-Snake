@@ -21,6 +21,22 @@ namespace OcrApp
         private string _foundStamp;
         [JsonProperty(PropertyName = "path")]
         public string Path { get; set; }
+        public double MinPercentage
+        {
+            get
+            {
+                return Detections.Min(x => x.MinPercentage);
+            }
+        }
+
+        public char CharWithMinPercentage
+        {
+            get
+            {
+                Detections.Sort((x, y) => y.MinPercentage.CompareTo(x.MinPercentage));
+                return Detections.First().CharWithMinPercentage;
+            }
+        }
 
         public string FoundStamp
         {

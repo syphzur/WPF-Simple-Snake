@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OcrAppWPF.Views"
         mc:Ignorable="d" FontSize="18"
-        Title="OcrApp" Height="450" Width="600" WindowStartupLocation="CenterScreen">
+        Title="OcrApp" Height="600" Width="1000" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
@@ -38,9 +38,11 @@
             <DataGrid ItemsSource="{Binding ReceivedDataBindableCollection, Mode=OneWay}" AutoGenerateColumns="False" 
                       RowBackground="LightGoldenrodYellow" AlternatingRowBackground="LightGray">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Stamp" Binding="{Binding FoundStamp}" />
-                    <DataGridTextColumn Header="Start Timestamp" Binding="{Binding StartTimestamp}"/>
-                    <DataGridTextColumn Header="End Timestamp" Binding="{Binding EndTimestamp}"/>
+                    <DataGridTextColumn Header="Found stamp" Binding="{Binding FoundStamp}" />
+                    <DataGridTextColumn Header="Start timestamp" Binding="{Binding StartTimestamp}"/>
+                    <DataGridTextColumn Header="End timestamp" Binding="{Binding EndTimestamp}"/>
+                    <DataGridTextColumn Header="Min. percentage" Binding="{Binding MinPercentage}"/>
+                    <DataGridTextColumn Header="Char w/ min. %" Binding="{Binding CharWithMinPercentage}"/>
                 </DataGrid.Columns>
             </DataGrid>
         </GroupBox>

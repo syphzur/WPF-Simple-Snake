@@ -13,7 +13,7 @@ using WebSocketSharp;
 
 namespace OcrAppWPF.ViewModels
 {
-    public class DataViewModel : Screen
+    public class DataViewModel : Conductor<object>
     {
         private WebSocket _webSocket;
         private bool _canOpenWebSocket;
@@ -79,23 +79,23 @@ namespace OcrAppWPF.ViewModels
 
         public void OpenWebSocket()
         {
-            //_webSocket.Connect();
+            _webSocket.Connect();
 
             //test
-            CanOpenWebSocket = false;
-            WebSocketStatus = "Opened";
-            WebSocketStatusColor = "Green";
+            //CanOpenWebSocket = false;
+            //WebSocketStatus = "Opened";
+            //WebSocketStatusColor = "Green";
         }
 
         public void CloseWebSocket()
         {
-            //_webSocket.Close();
+            _webSocket.Close();
 
 
             //test
-            CanOpenWebSocket = true;
-            WebSocketStatus = "Closed";
-            WebSocketStatusColor = "Red";
+            //CanOpenWebSocket = true;
+            //WebSocketStatus = "Closed";
+            //WebSocketStatusColor = "Red";
         }
 
         private void OnOpen(object sender, EventArgs e)
@@ -157,8 +157,14 @@ namespace OcrAppWPF.ViewModels
         private void SaveJsonToFile()
         {
 
-            File.WriteAllText(@"data.json", JsonConvert.SerializeObject(this._receivedData.Stamps, Formatting.None) + Environment.NewLine);
+            File.WriteAllText(@"data.json", JsonConvert.SerializeObject(this._receivedData, Formatting.None));
         }
+
+        public void LoadFilePage()
+        {
+            ActivateItem(new FileViewModel());
+        }
+
     }
 }
 
