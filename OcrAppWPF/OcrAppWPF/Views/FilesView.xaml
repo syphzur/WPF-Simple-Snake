@@ -5,8 +5,52 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:OcrAppWPF.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800" Background="Blue">
+             d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-            
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+
+        <!-- Row 1 -->
+        <TextBlock Text="Day:" Grid.Row ="1" Grid.Column="1"/>
+        <TextBox Text="{Binding Path=Day, Mode=TwoWay}" Background ="LightYellow" Grid.Row ="1" Grid.Column="2" Width="50" MaxLength="2"/>
+        <TextBlock Text="Month:" Grid.Row ="1" Grid.Column="3"/>
+        <TextBox Text="{Binding Path=Month, Mode=TwoWay}" Background="LightYellow" Grid.Row ="1" Grid.Column="4" Width="50" MaxLength="2"/>
+        <TextBlock Text="Year:" Grid.Row ="1" Grid.Column="5"/>
+        <TextBox Text="{Binding Path=Year, Mode=TwoWay}" Background="LightYellow" Grid.Row ="1" Grid.Column="6" Width="50" MaxLength="4"/>
+        <Button x:Name="Search" Grid.Row="1" Grid.Column="9"> Search </Button>
+
+        <GroupBox Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="10" >
+            <DataGrid ItemsSource="{Binding DataBindableCollection, Mode=OneWay}" AutoGenerateColumns="False" 
+                      RowBackground="LightGoldenrodYellow" AlternatingRowBackground="LightGray">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Found stamp" Binding="{Binding FoundStamp}" />
+                    <DataGridTextColumn Header="Start timestamp" Binding="{Binding StartTimestamp}"/>
+                    <DataGridTextColumn Header="End timestamp" Binding="{Binding EndTimestamp}"/>
+                    <DataGridTextColumn Header="Min. percentage" Binding="{Binding MinPercentage}"/>
+                    <DataGridTextColumn Header="Char w/ min. %" Binding="{Binding CharWithMinPercentage}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </GroupBox>
     </Grid>
 </UserControl>

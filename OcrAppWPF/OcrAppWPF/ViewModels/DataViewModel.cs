@@ -13,7 +13,7 @@ using WebSocketSharp;
 
 namespace OcrAppWPF.ViewModels
 {
-    public class DataViewModel : Conductor<object>
+    public class DataViewModel : Screen
     {
         private WebSocket _webSocket;
         private bool _canOpenWebSocket;
@@ -133,7 +133,7 @@ namespace OcrAppWPF.ViewModels
             WebSocketStatus = "Closed";
             WebSocketStatusColor = "Red";
         }
-        
+
         private void ReadJsonFromFile()
         {
             if (!File.Exists(@"data.json"))
@@ -149,22 +149,16 @@ namespace OcrAppWPF.ViewModels
                 }
                 NotifyOfPropertyChange(() => ReceivedDataBindableCollection);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Wrong data in file. \n" + ex.Message);
             }
-    }
+        }
         private void SaveJsonToFile()
         {
 
             File.WriteAllText(@"data.json", JsonConvert.SerializeObject(this._receivedData, Formatting.None));
         }
-
-        public void LoadFilePage()
-        {
-            ActivateItem(new FileViewModel());
-        }
-
     }
 }
 
