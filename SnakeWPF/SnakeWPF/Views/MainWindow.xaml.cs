@@ -23,8 +23,6 @@ namespace SnakeWPF
             Timer.Tick += OnTimerTick;
 
             InitializeComponent();
-
-            StartGame();
         }
 
         private void StartGame()

@@ -8,14 +8,17 @@ using System.Windows.Media;
 
 namespace SnakeWPF
 {
-    class Settings
+    public class Settings
     {
         //public Point StartingPoint;
-        public const int StartingPositionX = 100;
-        public const int StartingPositionY = 200;
+        public const int StartingPositionX = 180;
+        public const int StartingPositionY = 280;
 
-        public static Brush SnakeHeadBrush = Brushes.DimGray;
-        public static Brush SnakeSegmentBrush = Brushes.Gray;
+        public const int GameAreaWidth = 400;
+        public const int GameAreaHeight = 800;
+
+        //public static Brush SnakeHeadBrush = Brushes.DimGray;
+        //public static Brush SnakeSegmentBrush = Brushes.Gray;
 
         public const int SnakeSegmentSize = 20;
         public const int StartingSpeed = 100;

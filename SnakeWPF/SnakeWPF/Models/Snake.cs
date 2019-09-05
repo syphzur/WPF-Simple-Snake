@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Caliburn.Micro;
+using SnakeWPF.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,17 +14,17 @@ namespace SnakeWPF
         None, Up, Down, Left, Right
     }
 
-    class Snake
+    class Snake : PropertyChangedBase
     {
-        public List<SnakeSegment> SnakeSegments { get; set; }
-        public Direction SnakeDirection { get; set; }
+        public BindableCollection<SnakeSegment> SnakeSegments { get; set; }
+        public Direction Direction { get; set; }
         public int SnakeSpeed { get; set; }
 
         public Snake()
         {
-            this.SnakeSegments = new List<SnakeSegment>
-            { new SnakeSegment(new Point(Settings.StartingPositionX, Settings.StartingPositionY), true) }; // adding head
-            this.SnakeDirection = Direction.None;
+            this.SnakeSegments = new BindableCollection<SnakeSegment>
+            { new SnakeSegment(new Point(Settings.StartingPositionX, Settings.StartingPositionY), Settings.SnakeSegmentSize, true) }; // adding head
+            this.Direction = Direction.None;
             this.SnakeSpeed = Settings.StartingSpeed;
         }
         public void Move()
@@ -34,7 +36,7 @@ namespace SnakeWPF
 
             //move the head
             Point NewPosition = new Point();
-            switch (SnakeDirection)
+            switch (Direction)
             {
                 case Direction.Up:
                     NewPosition.Y = SnakeSegments.First().Position.Y - Settings.SnakeSegmentSize;
@@ -52,24 +54,37 @@ namespace SnakeWPF
                     NewPosition.X = SnakeSegments.First().Position.X + Settings.SnakeSegmentSize;
                     NewPosition.Y = SnakeSegments.First().Position.Y;
                     break;
+                case Direction.None:
+                    NewPosition = SnakeSegments.First().Position;
+                    break;
             }
             SnakeSegments.First().Move(NewPosition);
+            NotifyOfPropertyChange(() => SnakeSegments);
         }
 
-        public int GetSnakeLength()
+        public void AddNewSegment(Point position)
         {
-            return this.SnakeSegments.Count;
-        }
-
-        public void AddNewSegment(Point Position)
-        {
-            SnakeSegments.Add(new SnakeSegment(Position, false));
+            SnakeSegments.Add(new SnakeSegment(position, Settings.SnakeSegmentSize, false));
             SpeedUp();
+
+            NotifyOfPropertyChange(() => SnakeSegments);
         }
 
         private void SpeedUp()
         {
             SnakeSpeed -= 5;
+        }
+
+        public void ChangeDirection(Direction direction)
+        {
+            if (direction == Direction.Up && this.Direction != Direction.Down)
+                this.Direction = Direction.Up;
+            else if (direction == Direction.Left && this.Direction != Direction.Right)
+                this.Direction = Direction.Left;
+            else if (direction == Direction.Down && this.Direction != Direction.Up)
+                this.Direction = Direction.Down;
+            else if (direction == Direction.Right && this.Direction != Direction.Left)
+                this.Direction = Direction.Right;
         }
     }
 }
