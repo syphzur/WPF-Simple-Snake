@@ -1,30 +1,28 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 
 namespace OcrApp
 {
     class ReceivedData
     {
-        public List<Stamp> stamps { get; set; }
+        [JsonProperty(PropertyName = "stamps")]
+        public List<Stamp> Stamps { get; set; } = new List<Stamp>();
 
-        public ReceivedData()
-        {
-            stamps = new List<Stamp>();
-        }
-        public ReceivedData(List<Stamp> stamps)
-        {
-            this.stamps = new List<Stamp>(stamps);
-        }
+        //public ReceivedData(List<Stamp> stamps)
+        //{
+        //    this.Stamps = new List<Stamp>(stamps);
+       // }
         public void Add(Stamp stamp)
         {
-            this.stamps.Add(stamp);
+            this.Stamps.Add(stamp);
         }
 
         public void DisplayFoundStamps()
         {
-            foreach (var stamp in stamps)
+            foreach (var stamp in Stamps)
             {
-                Console.WriteLine(stamp.data.FoundStamp);
+                Console.WriteLine(stamp.Data.FoundStamp);
             }
         }
     }

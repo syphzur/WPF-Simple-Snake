@@ -20,7 +20,7 @@ namespace OcrAppWPF.ViewModels
         private string _webSocketStatusColor;
         private string _webSocketStatus;
         private ReceivedData _receivedData;
-        private BindableCollection<Data> _receivedDataBindableCollection = new BindableCollection<Data>();
+        public BindableCollection<Data> ReceivedDataBindableCollection { get; set; } = new BindableCollection<Data>();
 
         public DataViewModel()
         {
@@ -34,14 +34,6 @@ namespace OcrAppWPF.ViewModels
             _webSocket.OnOpen += OnOpen;
             ReadJsonFromFile();
         }
-
-
-        public BindableCollection<Data> ReceivedData
-        {
-            get { return _receivedDataBindableCollection; }
-            set { _receivedDataBindableCollection = value; }
-        }
-
 
         public bool CanOpenWebSocket
         {
@@ -89,22 +81,21 @@ namespace OcrAppWPF.ViewModels
         {
             _webSocket.Connect();
 
-            /*
             //test
-            CanOpenWebSocket = false;
-            WebSocketStatus = "Opened";
-            WebSocketStatusColor = "Green";*/
+            //CanOpenWebSocket = false;
+            //WebSocketStatus = "Opened";
+            //WebSocketStatusColor = "Green";
         }
 
         public void CloseWebSocket()
         {
             _webSocket.Close();
 
-            /*
+
             //test
-            CanOpenWebSocket = true;
-            WebSocketStatus = "Closed";
-            WebSocketStatusColor = "Red";*/
+            //CanOpenWebSocket = true;
+            //WebSocketStatus = "Closed";
+            //WebSocketStatusColor = "Red";
         }
 
         private void OnOpen(object sender, EventArgs e)
@@ -124,14 +115,15 @@ namespace OcrAppWPF.ViewModels
             try
             {
                 var newItem = JsonConvert.DeserializeObject<Stamp>(e.Data);
-                _receivedDataBindableCollection.Add(newItem.data);
+                ReceivedDataBindableCollection.Add(newItem.Data);
                 _receivedData.Add(newItem);
-                NotifyOfPropertyChange(() => ReceivedData);
+                NotifyOfPropertyChange(() => ReceivedDataBindableCollection);
+                SaveJsonToFile();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-                MessageBox.Show("Received message: " + e.Data);
+                MessageBox.Show("Wrong message received: " + e.Data);
             }
         }
 
@@ -141,24 +133,31 @@ namespace OcrAppWPF.ViewModels
             WebSocketStatus = "Closed";
             WebSocketStatusColor = "Red";
         }
-        
+
         private void ReadJsonFromFile()
         {
             if (!File.Exists(@"data.json"))
                 return;
-            string json = File.ReadAllText(@"data.json");
-            var newItem = JsonConvert.DeserializeObject<ReceivedData>(json);
-            _receivedData = new ReceivedData(newItem.stamps);
-            foreach (var stamp in newItem.stamps)
+            try
             {
-                _receivedDataBindableCollection.Add(stamp.data);
+                string json = File.ReadAllText(@"data.json");
+                var newItem = JsonConvert.DeserializeObject<ReceivedData>(json);
+                _receivedData = newItem;
+                foreach (var stamp in newItem.Stamps)
+                {
+                    ReceivedDataBindableCollection.Add(stamp.Data);
+                }
+                NotifyOfPropertyChange(() => ReceivedDataBindableCollection);
             }
-                NotifyOfPropertyChange(() => ReceivedData);
-    }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Wrong data in file. \n" + ex.Message);
+            }
+        }
         private void SaveJsonToFile()
         {
-            FileStream fs = File.Create(@"data.json");
-            File.WriteAllText(@"data.json", JsonConvert.SerializeObject(this._receivedData.stamps, Formatting.None));
+
+            File.WriteAllText(@"data.json", JsonConvert.SerializeObject(this._receivedData, Formatting.None));
         }
     }
 }

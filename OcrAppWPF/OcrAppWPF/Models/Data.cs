@@ -1,23 +1,41 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace OcrApp
 {
     public class Data
     {
-        public List<Detection> detections { get; set; }
-        public string endTimestamp { get; set; }
-        public string startTimestamp { get; set; }
+        [JsonProperty(PropertyName = "detections")]
+        public List<Detection> Detections { get; set; } = new List<Detection>();
+        [JsonProperty(PropertyName = "endTimestamp")]
+        public string EndTimestamp { get; set; }
+        [JsonProperty(PropertyName = "startTimestamp")]
+        public string StartTimestamp { get; set; }
+        [JsonProperty(PropertyName = "foundStamp")]
         private string _foundStamp;
-        public string path { get; set; }
-
-        public Data()
+        [JsonProperty(PropertyName = "path")]
+        public string Path { get; set; }
+        public double MinPercentage
         {
-            this.detections = new List<Detection>();
+            get
+            {
+                return Detections.Min(x => x.MinPercentage);
+            }
+        }
+
+        public char CharWithMinPercentage
+        {
+            get
+            {
+                Detections.Sort((x, y) => y.MinPercentage.CompareTo(x.MinPercentage));
+                return Detections.First().CharWithMinPercentage;
+            }
         }
 
         public string FoundStamp
@@ -32,6 +50,7 @@ namespace OcrApp
                 else
                 {
                     _foundStamp = "Wrong stamp";
+                    MessageBox.Show("Wrong Stamp: " + value);
                 }
             }
         }

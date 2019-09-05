@@ -6,12 +6,9 @@ namespace OcrApp
 {
     public class Stamp
     {
-        public string type { get; set; }
-        public Data data { get; set; }
-
-        public Stamp()
-        {
-            this.data = new Data();
-        }
+        [JsonProperty(PropertyName = "type")]
+        public string Type { get; set; }
+        [JsonProperty(PropertyName = "data")]
+        public Data Data { get; set; } = new Data();
     }
 }

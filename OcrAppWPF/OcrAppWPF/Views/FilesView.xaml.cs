@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace OcrAppWPF.Views
 {
     /// <summary>
-    /// Logika interakcji dla klasy DataView.xaml
+    /// Logika interakcji dla klasy FilesView.xaml
     /// </summary>
-    public partial class DataView : UserControl
+    public partial class FilesView : UserControl
     {
-        public DataView()
+        public FilesView()
         {
             InitializeComponent();
         }
