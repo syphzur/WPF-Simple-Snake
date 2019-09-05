@@ -26,9 +26,9 @@
         </Grid.RowDefinitions>
 
         <!-- Row 1 -->
-        <TextBlock Text="WebSocket:" Grid.Row ="1" Grid.Column="1"></TextBlock>
+        <TextBlock Text="WebSocket:" Grid.Row ="1" Grid.Column="1"/>
         <TextBlock Text="{Binding Path=WebSocketStatus, Mode=OneWay}" Foreground="{Binding Path=WebSocketStatusColor, Mode=OneWay}" 
-                   Grid.Row ="1" Grid.Column="2"></TextBlock>
+                   Grid.Row ="1" Grid.Column="2"/>
         <Button x:Name="OpenWebSocket" Grid.Row="1" Grid.Column="4" >Open WebSocket</Button>
         <Button x:Name="CloseWebSocket" Grid.Row="1" Grid.Column="6">Close WebSocket</Button>
 

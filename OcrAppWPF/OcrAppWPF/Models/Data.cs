@@ -25,7 +25,10 @@ namespace OcrApp
         {
             get
             {
-                return Detections.Min(x => x.MinPercentage);
+                if (Detections.Count > 0)
+                    return Detections.Min(x => x.MinPercentage);
+                else
+                    return 0;
             }
         }
 
@@ -33,8 +36,13 @@ namespace OcrApp
         {
             get
             {
-                Detections.Sort((x, y) => y.MinPercentage.CompareTo(x.MinPercentage));
-                return Detections.First().CharWithMinPercentage;
+                if (Detections.Count > 0)
+                {
+                    Detections.Sort((x, y) => y.MinPercentage.CompareTo(x.MinPercentage));
+                    return Detections.First().CharWithMinPercentage;
+                }
+                else
+                    return '0';
             }
         }
 

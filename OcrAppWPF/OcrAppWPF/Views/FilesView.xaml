@@ -44,11 +44,11 @@
             <DataGrid ItemsSource="{Binding DataBindableCollection, Mode=OneWay}" AutoGenerateColumns="False" 
                       RowBackground="LightGoldenrodYellow" AlternatingRowBackground="LightGray">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Found stamp" Binding="{Binding FoundStamp}" />
-                    <DataGridTextColumn Header="Start timestamp" Binding="{Binding StartTimestamp}"/>
-                    <DataGridTextColumn Header="End timestamp" Binding="{Binding EndTimestamp}"/>
-                    <DataGridTextColumn Header="Min. percentage" Binding="{Binding MinPercentage}"/>
-                    <DataGridTextColumn Header="Char w/ min. %" Binding="{Binding CharWithMinPercentage}"/>
+                    <DataGridTextColumn Header="Found stamp" Binding="{Binding Data.FoundStamp}" />
+                    <DataGridTextColumn Header="Start timestamp" Binding="{Binding Data.StartTimestamp}"/>
+                    <DataGridTextColumn Header="End timestamp" Binding="{Binding Data.EndTimestamp}"/>
+                    <DataGridTextColumn Header="Min. percentage" Binding="{Binding Data.MinPercentage}"/>
+                    <DataGridTextColumn Header="Char w/ min. %" Binding="{Binding Data.CharWithMinPercentage}"/>
                 </DataGrid.Columns>
             </DataGrid>
         </GroupBox>

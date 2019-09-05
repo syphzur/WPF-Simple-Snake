@@ -13,7 +13,7 @@ namespace OcrAppWPF.ViewModels
         private int _day;
         private int _month;
         private int _year;
-        public BindableCollection<Data> DataBindableCollection { get; set; } = new BindableCollection<Data>();
+        public BindableCollection<Stamp> DataBindableCollection { get; set; } = new BindableCollection<Stamp>();
 
         public int Day
         {
@@ -54,14 +54,25 @@ namespace OcrAppWPF.ViewModels
 
         public void Search()
         {
-            DataBindableCollection = new BindableCollection<Data>();
-            string path = @"logs/" + Year.ToString("D4") + "-" + Month.ToString("D2") +  "-" + Day.ToString("D2");
+            DataBindableCollection = new BindableCollection<Stamp>();
+            string path = @"logs\" + Year.ToString("D4") + "-" + Month.ToString("D2") +  "-" + Day.ToString("D2");
             try
             {
                 foreach (var folderPath in Directory.GetDirectories(path))
                 {
-                    string json = File.ReadAllText(folderPath + "/log_analyze_stamp.json");
-                    DataBindableCollection.Add(JsonConvert.DeserializeObject<Data>(json));
+                    string json = File.ReadAllText(folderPath + @"\log_analyze_stamp.json");
+                    try
+                    {
+                        var stamp = JsonConvert.DeserializeObject<Stamp>(json);
+                        if (stamp.Type != null)
+                            DataBindableCollection.Add(stamp);
+                        else
+                            MessageBox.Show("Wrong file: " + folderPath + @"\log_analyze_stamp.json");
+                    }
+                    catch(Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
                     NotifyOfPropertyChange(() => DataBindableCollection);
                 }
             }
