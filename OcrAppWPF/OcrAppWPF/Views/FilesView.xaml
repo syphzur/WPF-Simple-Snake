@@ -39,9 +39,10 @@
         <TextBlock Text="Year:" Grid.Row ="1" Grid.Column="5"/>
         <TextBox Text="{Binding Path=Year, Mode=TwoWay}" Background="LightYellow" Grid.Row ="1" Grid.Column="6" Width="50" MaxLength="4"/>
         <Button x:Name="Search" Grid.Row="1" Grid.Column="9"> Search </Button>
-
+        
+        <!-- Row 2 -->
         <GroupBox Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="10" >
-            <DataGrid ItemsSource="{Binding DataBindableCollection, Mode=OneWay}" AutoGenerateColumns="False" 
+            <DataGrid ItemsSource="{Binding DataBindableCollection, Mode=OneWay}" SelectedItem="{Binding SelectedStamp, Mode=OneWayToSource}" AutoGenerateColumns="False" 
                       RowBackground="LightGoldenrodYellow" AlternatingRowBackground="LightGray">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Found stamp" Binding="{Binding Data.FoundStamp}" />
@@ -52,5 +53,26 @@
                 </DataGrid.Columns>
             </DataGrid>
         </GroupBox>
+
+
+        <!-- Row 3 -->
+
+        <GroupBox Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="10" >
+            <DataGrid ItemsSource="{Binding SelectedStamp.Data.DetectionsBindableCollection, Mode=OneWay}"  SelectedItem="{Binding SelectedDetection, Mode=OneWayToSource}" 
+                      AutoGenerateColumns="False" RowBackground="LightGoldenrodYellow" AlternatingRowBackground="LightGray">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Detection filename" Binding="{Binding DetectionFilename}" Width="250"/>
+                    <DataGridTextColumn Header="Detection filepath" Binding="{Binding DetectionFilepath}" Width="250"/>
+                    <DataGridTextColumn Header="Image filename" Binding="{Binding ImageFilename}" Width="250"/>
+                    <DataGridTextColumn Header="Image filepath" Binding="{Binding ImageFilepath}" Width="250"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </GroupBox>
+        
+        <!-- Row 4 -->
+        <StackPanel  Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="10">
+            <Image Source="{Binding ImagePath}" HorizontalAlignment="Center" />
+            <Image Source="{Binding ImagePath}" HorizontalAlignment="Center" />
+        </StackPanel>
     </Grid>
 </UserControl>

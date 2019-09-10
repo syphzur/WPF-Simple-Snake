@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OcrAppWPF.Views"
         mc:Ignorable="d" FontSize="18"
-        Title="OcrApp" Height="600" Width="1000" WindowStartupLocation="CenterScreen">
+        Title="OcrApp" Height="auto" Width="1100" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>

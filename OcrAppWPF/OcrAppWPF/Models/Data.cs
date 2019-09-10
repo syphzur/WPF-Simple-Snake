@@ -1,11 +1,8 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using Caliburn.Micro;
+using MoreLinq.Extensions;
+using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-using System.Windows;
 
 namespace OcrApp
 {
@@ -38,8 +35,9 @@ namespace OcrApp
             {
                 if (Detections.Count > 0)
                 {
-                    Detections.Sort((x, y) => y.MinPercentage.CompareTo(x.MinPercentage));
-                    return Detections.First().CharWithMinPercentage;
+                    //Detections.Sort((x, y) => y.MinPercentage.CompareTo(x.MinPercentage));
+                    //return Detections.First().CharWithMinPercentage;
+                    return Detections.MinBy(x => x.MinPercentage).First().CharWithMinPercentage;
                 }
                 else
                     return '0';
@@ -49,24 +47,41 @@ namespace OcrApp
         public string FoundStamp
         {
             get { return _foundStamp; }
-            set
+            set { _foundStamp = value; }
+            //set
+            //{
+            //    if (CheckStamp(value))
+            //    {
+            //        _foundStamp = value;
+            //    }
+            //    else
+            //    {
+            //        _foundStamp = "Wrong stamp";
+            //        MessageBox.Show("Wrong Stamp: " + value);
+            //    }
+            //}
+        }
+        public BindableCollection<Detection> DetectionsBindableCollection
+        {
+            get
             {
-                if (CheckStamp(value))
-                {
-                    _foundStamp = value;
-                }
-                else
-                {
-                    _foundStamp = "Wrong stamp";
-                    MessageBox.Show("Wrong Stamp: " + value);
-                }
+                return new BindableCollection<Detection>(Detections);
             }
         }
 
-        private bool CheckStamp(string value)
+        public bool CheckDetectionsStamps
         {
-            Regex rx = new Regex(@"^\d{6}[A-Z]\d{3}$");
-            return rx.IsMatch(value);
+            get
+            {
+                return Detections.All(x => FoundStamp.Contains(x.StampFromDetectionData));
+            }
+
         }
+
+        //private bool CheckStamp(string value)
+        //{
+        //    Regex rx = new Regex(@"^\d{6}[A-Z]\d{3}$");
+        //    return rx.IsMatch(value);
+        //}
     }
 }

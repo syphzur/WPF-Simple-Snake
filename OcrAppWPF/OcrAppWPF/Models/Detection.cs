@@ -1,6 +1,8 @@
-﻿using Newtonsoft.Json;
+﻿using MoreLinq.Extensions;
+using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 
 namespace OcrApp
 {
@@ -18,6 +20,19 @@ namespace OcrApp
         public string ImageFilepath { get; set; }
         [JsonProperty(PropertyName = "detections")]
         public List<DetectionStruct> DetectionData { get; set; } = new List<DetectionStruct>();
+        public string StampFromDetectionData
+        {
+            get
+            {
+                DetectionData = DetectionData.OrderBy(x => x.MinX + (10 * x.MinY)).ToList();
+                StringBuilder stamp = new StringBuilder();
+                foreach (var detectionStruct in DetectionData)
+                {
+                    stamp.Append(detectionStruct.ClassName);
+                }
+                return stamp.ToString();
+            }
+        }
         public double MinPercentage
         {
             get
@@ -29,8 +44,9 @@ namespace OcrApp
         {
             get
             {
-                DetectionData.Sort((x, y) => x.Percentage.CompareTo(y.Percentage));
-                return DetectionData.First().ClassName;
+                //DetectionData.Sort((x, y) => x.Percentage.CompareTo(y.Percentage));
+                //return DetectionData.Aggregate((x, y) => y.Percentage > x.Percentage ? y : x).ClassName;
+                return DetectionData.MinBy(x => x.Percentage).First().ClassName;
             }
         }
     }

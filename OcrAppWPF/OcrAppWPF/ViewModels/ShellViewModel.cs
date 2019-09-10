@@ -1,14 +1,4 @@
 ﻿using Caliburn.Micro;
-using Newtonsoft.Json;
-using OcrApp;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using WebSocketSharp;
 
 namespace OcrAppWPF.ViewModels
 {

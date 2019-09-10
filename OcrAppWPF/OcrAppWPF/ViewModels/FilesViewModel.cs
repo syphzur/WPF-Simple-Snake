@@ -13,7 +13,55 @@ namespace OcrAppWPF.ViewModels
         private int _day;
         private int _month;
         private int _year;
+
+        private Stamp _selectedStamp;
+        private Detection _selectedDetection;
+
+        public  Detection SelectedDetection
+        {
+            get { return _selectedDetection; }
+            set
+            {
+                _selectedDetection = value;
+                NotifyOfPropertyChange(() => SelectedDetection);
+                NotifyOfPropertyChange(() => ImagePath);
+            }
+        }
+
         public BindableCollection<Stamp> DataBindableCollection { get; set; } = new BindableCollection<Stamp>();
+
+        public string Path
+        {
+            get
+            {
+                return @"logs/" + Year.ToString("D4") + "-" + Month.ToString("D2") + "-" + Day.ToString("D2");
+            }
+        }
+
+        public Stamp SelectedStamp
+        {
+            get { return _selectedStamp; }
+            set
+            {
+                _selectedStamp = value;
+                NotifyOfPropertyChange(() => SelectedStamp);
+            }
+        }
+
+        public string ImagePath
+        {
+            get
+            {
+                if (SelectedDetection != null)
+                {
+                    var path = Path + SelectedDetection.ImageFilepath.Replace("/home/golem/ReaSyLog_test", "");
+                    return path;
+                }
+                else
+                    return string.Empty;
+
+            }
+        }
 
         public int Day
         {
@@ -55,10 +103,9 @@ namespace OcrAppWPF.ViewModels
         public void Search()
         {
             DataBindableCollection = new BindableCollection<Stamp>();
-            string path = @"logs\" + Year.ToString("D4") + "-" + Month.ToString("D2") +  "-" + Day.ToString("D2");
             try
             {
-                foreach (var folderPath in Directory.GetDirectories(path))
+                foreach (var folderPath in Directory.GetDirectories(Path))
                 {
                     string json = File.ReadAllText(folderPath + @"\log_analyze_stamp.json");
                     try
@@ -78,7 +125,7 @@ namespace OcrAppWPF.ViewModels
             }
             catch(DirectoryNotFoundException)
             {
-                MessageBox.Show("Directory " + path + " not found.", "Error");
+                MessageBox.Show("Directory " + Path + " not found.", "Error");
                 SetFirstFoundDate();
             }
         }

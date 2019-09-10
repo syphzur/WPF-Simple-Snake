@@ -2,13 +2,8 @@
 using Newtonsoft.Json;
 using OcrApp;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Data;
 using WebSocketSharp;
 
 namespace OcrAppWPF.ViewModels
@@ -21,6 +16,7 @@ namespace OcrAppWPF.ViewModels
         private string _webSocketStatus;
         private ReceivedData _receivedData;
         public BindableCollection<Data> ReceivedDataBindableCollection { get; set; } = new BindableCollection<Data>();
+
 
         public DataViewModel()
         {
@@ -157,7 +153,7 @@ namespace OcrAppWPF.ViewModels
         private void SaveJsonToFile()
         {
 
-            File.WriteAllText(@"data.json", JsonConvert.SerializeObject(this._receivedData, Formatting.None));
+            File.WriteAllText(@"data.json", JsonConvert.SerializeObject(this._receivedData, Formatting.Indented));
         }
     }
 }

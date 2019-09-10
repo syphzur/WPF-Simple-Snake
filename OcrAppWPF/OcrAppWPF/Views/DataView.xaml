@@ -21,7 +21,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="20" />
             <RowDefinition Height="auto" />
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
             <RowDefinition Height="20" />
         </Grid.RowDefinitions>
 
@@ -43,8 +43,10 @@
                     <DataGridTextColumn Header="End timestamp" Binding="{Binding EndTimestamp}"/>
                     <DataGridTextColumn Header="Min. percentage" Binding="{Binding MinPercentage}"/>
                     <DataGridTextColumn Header="Char w/ min. %" Binding="{Binding CharWithMinPercentage}"/>
+                    <DataGridTextColumn Header="Detections check" Binding="{Binding CheckDetectionsStamps}"/>
                 </DataGrid.Columns>
             </DataGrid>
         </GroupBox>
+       
     </Grid>
 </UserControl>
