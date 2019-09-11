@@ -4,8 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:OcrAppWPF.Views"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             mc:Ignorable="d">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
@@ -33,7 +32,6 @@
         <Button x:Name="CloseWebSocket" Grid.Row="1" Grid.Column="6">Close WebSocket</Button>
 
         <!-- Row 2 -->
-
         <GroupBox Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="7" >
             <DataGrid ItemsSource="{Binding ReceivedDataBindableCollection, Mode=OneWay}" AutoGenerateColumns="False" 
                       RowBackground="LightGoldenrodYellow" AlternatingRowBackground="LightGray">
@@ -47,6 +45,5 @@
                 </DataGrid.Columns>
             </DataGrid>
         </GroupBox>
-       
     </Grid>
 </UserControl>

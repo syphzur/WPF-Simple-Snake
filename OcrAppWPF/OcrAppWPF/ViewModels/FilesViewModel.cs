@@ -13,9 +13,9 @@ namespace OcrAppWPF.ViewModels
         private int _day;
         private int _month;
         private int _year;
-
         private Stamp _selectedStamp;
         private Detection _selectedDetection;
+        public BindableCollection<Stamp> DataBindableCollection { get; set; } = new BindableCollection<Stamp>();
 
         public  Detection SelectedDetection
         {
@@ -27,9 +27,9 @@ namespace OcrAppWPF.ViewModels
                 NotifyOfPropertyChange(() => ImagePath);
             }
         }
-
-        public BindableCollection<Stamp> DataBindableCollection { get; set; } = new BindableCollection<Stamp>();
-
+        /// <summary>
+        /// Return folder's name (logs/YYY-MM-DD)
+        /// </summary>
         public string Path
         {
             get
@@ -47,19 +47,28 @@ namespace OcrAppWPF.ViewModels
                 NotifyOfPropertyChange(() => SelectedStamp);
             }
         }
-
-        public string ImagePath
+        /// <summary>
+        /// Returns path to the image
+        /// </summary>
+        public string ImagePath 
         {
             get
             {
                 if (SelectedDetection != null)
                 {
-                    var path = Path + SelectedDetection.ImageFilepath.Replace("/home/golem/ReaSyLog_test", "");
-                    return path;
+                    string[] pathArray = SelectedDetection.ImageFilepath.Replace("/home/golem/ReaSyLog", "").Split('/');
+                    pathArray[1] = pathArray[1].Replace(":", "");
+
+                    var imageFilename = SelectedDetection.ImageFilename.Replace(":", "_");
+
+                    var path = Path + "/" + pathArray[1] + @"/" + imageFilename;
+
+                    var x = $"{AppDomain.CurrentDomain.BaseDirectory}" + path;
+
+                    return x;
                 }
                 else
-                    return string.Empty;
-
+                    return null;
             }
         }
 
@@ -100,6 +109,9 @@ namespace OcrAppWPF.ViewModels
             Year = DateTime.Now.Year;
         }
 
+        /// <summary>
+        /// Finds folder by it's name and reads data from "log_analyze_stamp.json
+        /// </summary>
         public void Search()
         {
             DataBindableCollection = new BindableCollection<Stamp>();
@@ -129,7 +141,9 @@ namespace OcrAppWPF.ViewModels
                 SetFirstFoundDate();
             }
         }
-
+        /// <summary>
+        /// Sets the date to proper value.
+        /// </summary>
         private void SetFirstFoundDate()
         {
             try

@@ -17,7 +17,6 @@ namespace OcrAppWPF.ViewModels
         private ReceivedData _receivedData;
         public BindableCollection<Data> ReceivedDataBindableCollection { get; set; } = new BindableCollection<Data>();
 
-
         public DataViewModel()
         {
             _webSocket = new WebSocket("ws://172.22.13.5:7777");
@@ -76,22 +75,11 @@ namespace OcrAppWPF.ViewModels
         public void OpenWebSocket()
         {
             _webSocket.Connect();
-
-            //test
-            //CanOpenWebSocket = false;
-            //WebSocketStatus = "Opened";
-            //WebSocketStatusColor = "Green";
         }
 
         public void CloseWebSocket()
         {
             _webSocket.Close();
-
-
-            //test
-            //CanOpenWebSocket = true;
-            //WebSocketStatus = "Closed";
-            //WebSocketStatusColor = "Red";
         }
 
         private void OnOpen(object sender, EventArgs e)
@@ -152,7 +140,6 @@ namespace OcrAppWPF.ViewModels
         }
         private void SaveJsonToFile()
         {
-
             File.WriteAllText(@"data.json", JsonConvert.SerializeObject(this._receivedData, Formatting.Indented));
         }
     }
