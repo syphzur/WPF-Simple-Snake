@@ -60,6 +60,7 @@ namespace SnakeWPF.Models
 
         private void GameOver()
         {
+            Application.Current.MainWindow.Close();
             MessageBox.Show("Your score: " + Settings.Score, "GAME OVER");
         }
 
